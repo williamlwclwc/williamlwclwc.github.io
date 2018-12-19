@@ -3,6 +3,29 @@
   
     
     <entry>
+      <title>Welcome</title>
+      <link href="/2018/12/19/Introduction/"/>
+      <url>/2018/12/19/Introduction/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Welcome to my coding blog, this is my first post, thanks to the tutorial on how to build a blog with Hexo and this open-source theme melody.</p><p>The following tutorial links are Chinese.</p><h2 id="Create-a-blog-using-hexo"><a href="#Create-a-blog-using-hexo" class="headerlink" title="Create a blog using hexo"></a>Create a blog using hexo</h2><p>Tutorial Link: <a href="https://my.oschina.net/ryaneLee/blog/638440" target="_blank" rel="noopener">Tutorial on how to build your own blog with Hexo</a></p><h2 id="Hexo-Theme-melody"><a href="#Hexo-Theme-melody" class="headerlink" title="Hexo Theme: melody"></a>Hexo Theme: melody</h2><p>More info: <a href="https://github.com/Molunerfinn/hexo-theme-melody" target="_blank" rel="noopener">Theme: melody</a></p><h2 id="How-to-let-your-blog-got-searched-on-Baidu-amp-Google"><a href="#How-to-let-your-blog-got-searched-on-Baidu-amp-Google" class="headerlink" title="How to let your blog got searched on Baidu &amp; Google"></a>How to let your blog got searched on Baidu &amp; Google</h2><p>Tutorial Link: <a href="https://www.jianshu.com/p/25145964abf3" target="_blank" rel="noopener">Tutorial on how to add your blog in Google &amp; Baidu</a></p><p>Another tutorial: <a href="http://tengj.github.io/2016/03/14/hexo6seo/" target="_blank" rel="noopener">Tutorial on how to add your blog in Google &amp; Baidu</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web development </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> GitHub Blog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Git notes - undo commands</title>
       <link href="/2018/12/19/git-undo/"/>
       <url>/2018/12/19/git-undo/</url>
@@ -43,29 +66,6 @@
         <tags>
             
             <tag> Git </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>Welcome</title>
-      <link href="/2018/12/19/Introduction/"/>
-      <url>/2018/12/19/Introduction/</url>
-      
-        <content type="html"><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Welcome to my coding blog, this is my first post, thanks to the tutorial on how to build a blog with Hexo and this open-source theme melody.</p><h2 id="Create-a-blog-using-hexo"><a href="#Create-a-blog-using-hexo" class="headerlink" title="Create a blog using hexo"></a>Create a blog using hexo</h2><p>Tutorial Link: <a href="https://my.oschina.net/ryaneLee/blog/638440" target="_blank" rel="noopener">Tutorial on how to build your own blog with Hexo</a></p><h2 id="Hexo-Theme-melody"><a href="#Hexo-Theme-melody" class="headerlink" title="Hexo Theme: melody"></a>Hexo Theme: melody</h2><p>More info: <a href="https://github.com/Molunerfinn/hexo-theme-melody" target="_blank" rel="noopener">Theme: melody</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Web development </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> GitHub Blog </tag>
             
         </tags>
       
