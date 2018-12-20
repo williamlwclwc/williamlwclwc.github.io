@@ -6,5 +6,5 @@ Allow: /tags/
 Disallow: /vendors/
 Disallow: /vendors/
 Disallow: /fancybox/
-Sitemap: http://williamlwclwc.github.io/sitemap.xml
-Sitemap: http://williamlwclwc.github.io/baidusitemap.xml
+Sitemap: https://williamlwclwc.github.io/sitemap.xml
+Sitemap: https://williamlwclwc.github.io/baidusitemap.xml
