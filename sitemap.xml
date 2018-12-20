@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://williamlwclwc.github.io/2018/12/20/git-basic/</loc>
+    
+    <lastmod>2018-12-20T11:18:50.764Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://williamlwclwc.github.io/2018/12/20/md-notes/</loc>
     
-    <lastmod>2018-12-20T00:44:35.839Z</lastmod>
+    <lastmod>2018-12-20T11:15:43.175Z</lastmod>
     
   </url>
   
@@ -19,13 +26,6 @@
     <loc>http://williamlwclwc.github.io/2018/12/19/git-undo/</loc>
     
     <lastmod>2018-12-19T17:14:00.009Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://williamlwclwc.github.io/2018/12/19/git-basic/</loc>
-    
-    <lastmod>2018-12-19T17:08:57.339Z</lastmod>
     
   </url>
   
