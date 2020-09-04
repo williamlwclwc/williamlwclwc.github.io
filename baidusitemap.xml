@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://williamlwclwc.github.io/2019/06/12/md-notes/</loc>
-    <lastmod>2020-09-03T04:12:59.321Z</lastmod>
-  </url>  <url>
-    <loc>http://williamlwclwc.github.io/2019/06/13/Introduction/</loc>
-    <lastmod>2020-09-02T17:18:01.800Z</lastmod>
-  </url>  <url>
     <loc>http://williamlwclwc.github.io/2019/06/11/git-undo/</loc>
-    <lastmod>2020-09-02T17:17:54.023Z</lastmod>
+    <lastmod>2020-09-04T06:51:36.016Z</lastmod>
   </url>  <url>
     <loc>http://williamlwclwc.github.io/2019/06/11/git-basic/</loc>
-    <lastmod>2020-09-02T17:17:52.866Z</lastmod>
+    <lastmod>2020-09-04T06:51:26.079Z</lastmod>
+  </url>  <url>
+    <loc>http://williamlwclwc.github.io/2019/06/13/Introduction/</loc>
+    <lastmod>2020-09-04T06:51:16.466Z</lastmod>
+  </url>  <url>
+    <loc>http://williamlwclwc.github.io/2019/06/12/md-notes/</loc>
+    <lastmod>2020-09-04T06:45:19.160Z</lastmod>
   </url>
 </urlset>
