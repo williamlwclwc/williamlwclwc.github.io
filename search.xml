@@ -3,11 +3,34 @@
   
     
     <entry>
+      <title>论文的内容与结构</title>
+      <link href="/2020/09/18/The-Structure-of-Research-Papers/"/>
+      <url>/2020/09/18/The-Structure-of-Research-Papers/</url>
+      
+        <content type="html"><![CDATA[<h1 id="论文的内容与结构"><a href="#论文的内容与结构" class="headerlink" title="论文的内容与结构"></a>论文的内容与结构</h1><ul><li>本文章参考自: <a href="https://www.bilibili.com/video/BV1ua4y1v7H7">b站RC</a></li><li>适用于刚接触科研的萌新</li></ul><h2 id="论文是什么"><a href="#论文是什么" class="headerlink" title="论文是什么"></a>论文是什么</h2><ul><li>论文是某一位或者几位科研工作者，针对某一个领域的 <strong>某一个问题</strong> 在 <strong>某一个特定场景</strong> 下，通过理论研究，仿真验证，实验验证等方式，给出这个问题的某种 <strong>解决方法</strong> 。</li></ul><h2 id="论文标题"><a href="#论文标题" class="headerlink" title="论文标题"></a>论文标题</h2><ul><li>功能: 让同行发现通过关键词搜索到这篇论文，并且有兴趣点开它的摘要</li><li>构成: (限定词)+ 场景/对象 + 问题 + 解决方法。<ul><li>E.g. Joint Scheduling and Channel Allocation for Kalman Filtering over Multihop WirelessHART Networks</li></ul></li></ul><h2 id="论文摘要"><a href="#论文摘要" class="headerlink" title="论文摘要"></a>论文摘要</h2><ul><li>功能: 让同行在5分钟之内了解这篇工作与他的搜索目的是否相关，是否要继续读下去</li><li>构成:<ol><li>一句引导性的话，点明场景与问题</li><li>一句话说明自己所研究的问题很重要</li><li>概括: 用怎样的思路解决了什么问题</li><li>细节: 建立了什么模型，用了什么算法</li><li>结论: 我们的研究太靠谱了，验证成功</li></ol></li></ul><h2 id="论文引言"><a href="#论文引言" class="headerlink" title="论文引言"></a>论文引言</h2><ul><li>功能: 问题引入， 解释清楚为什么要进一步研究这个问题，你的研究能够为这个问题的发展带来怎样的贡献</li><li>构成:<ol><li>问题的研究背景，时代背景</li><li>问题的研究意义，研究的重要性</li><li>前人伟大的工作，他们做了什么</li><li>前人工作的不足，准备捶他们</li><li>我的工作很好，弥补了前人的不足</li><li>我的主要贡献有1、2、3</li></ol></li></ul><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><ul><li>功能: 用科学的语言描述这个世界中的一件小事。抽象-&gt;具体，通俗-&gt;数学，别人的-&gt;自己的</li><li>要求: 合情合理，叙述清晰，准确无误</li></ul><h2 id="问题求解"><a href="#问题求解" class="headerlink" title="问题求解"></a>问题求解</h2><ul><li>功能: 自圆其说，给出一个问题的答案</li><li>特点: 优秀的文章，简单明了。算法清晰可复现，结论清晰能引用</li></ul><h2 id="仿真-实验"><a href="#仿真-实验" class="headerlink" title="仿真/实验"></a>仿真/实验</h2><ul><li>功能: 对理论分析，通过数值模拟、实验验证来证明可行性</li><li>特点: 建模场景很复杂，仿真环境很简单，便于复现</li><li>常见描述: for simplicity (难的不好做)</li></ul><h2 id="总结讨论"><a href="#总结讨论" class="headerlink" title="总结讨论"></a>总结讨论</h2><ul><li>构成: 问题+方法+结论+未来可能研究方向</li></ul><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul><li>如何选择:<ul><li>体现对这一领域前人工作的深刻理解</li><li>引用审稿人/导师的文章</li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Research </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Research </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Reference on Building a Hexo Blog</title>
       <link href="/2019/06/13/Introduction/"/>
       <url>/2019/06/13/Introduction/</url>
       
-        <content type="html"><![CDATA[<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>Welcome to my blog, this is my first post, thanks to the tutorial on how to build a blog with Hexo and the open-source themes.</p><p>The following tutorial links are Chinese.</p><h3 id="Create-a-blog-using-hexo"><a href="#Create-a-blog-using-hexo" class="headerlink" title="Create a blog using hexo"></a>Create a blog using hexo</h3><p>Tutorial Link: <a href="https://my.oschina.net/ryaneLee/blog/638440">Tutorial on how to build your own blog with Hexo</a></p><h3 id="Hexo-Theme-butterfly-based-on-melody"><a href="#Hexo-Theme-butterfly-based-on-melody" class="headerlink" title="Hexo Theme: butterfly (based on melody)"></a>Hexo Theme: butterfly (based on melody)</h3><p>More info: <a href="https://demo.jerryc.me/">Theme: butterfly</a></p><h3 id="Hexo-Theme-melody"><a href="#Hexo-Theme-melody" class="headerlink" title="Hexo Theme: melody"></a>Hexo Theme: melody</h3><p>More info: <a href="https://github.com/Molunerfinn/hexo-theme-melody">Theme: melody</a></p><h3 id="How-to-let-your-blog-got-searched-on-Baidu-amp-Google"><a href="#How-to-let-your-blog-got-searched-on-Baidu-amp-Google" class="headerlink" title="How to let your blog got searched on Baidu &amp; Google"></a>How to let your blog got searched on Baidu &amp; Google</h3><p>Tutorial Link: <a href="https://www.jianshu.com/p/25145964abf3">Tutorial on how to add your blog in Google &amp; Baidu</a></p><p>Another tutorial: <a href="http://tengj.github.io/2016/03/14/hexo6seo/">Tutorial on how to add your blog in Google &amp; Baidu</a></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Welcome to my blog, this is my first post, thanks to the tutorial on how to build a blog with Hexo and the open-source themes.</p><p>The following tutorial links are Chinese.</p><h2 id="Create-a-blog-using-hexo"><a href="#Create-a-blog-using-hexo" class="headerlink" title="Create a blog using hexo"></a>Create a blog using hexo</h2><p>Tutorial Link: <a href="https://my.oschina.net/ryaneLee/blog/638440">Tutorial on how to build your own blog with Hexo</a></p><h2 id="Useful-Hexo-Commands"><a href="#Useful-Hexo-Commands" class="headerlink" title="Useful Hexo Commands"></a>Useful Hexo Commands</h2><ul><li>Clean caches (e.g. when changing themes): <code>hexo clean</code></li><li>Generate pages: <code>hexo generate</code> / <code>hexo g</code></li><li>Check Locally: <code>hexo server</code></li><li>Deploy on GitHub Page: <code>hexo deploy</code> / <code>hexo d</code></li><li>Or just use: <code>hexo g -d</code></li><li>Create new page: <code>hexo new page &quot;new page&#39;s title&quot;</code></li><li>Create new post: <code>hexo new post &quot;new post&#39;s title&quot;</code></li></ul><h2 id="Hexo-Theme-Recommendation"><a href="#Hexo-Theme-Recommendation" class="headerlink" title="Hexo Theme Recommendation"></a>Hexo Theme Recommendation</h2><ul><li><a href="https://demo.jerryc.me/">Theme: butterfly (currently in use, based on melody)</a></li><li><a href="https://github.com/Molunerfinn/hexo-theme-melody">Theme: melody</a></li></ul><h2 id="How-to-let-your-blog-got-searched-on-Baidu-amp-Google"><a href="#How-to-let-your-blog-got-searched-on-Baidu-amp-Google" class="headerlink" title="How to let your blog got searched on Baidu &amp; Google"></a>How to let your blog got searched on Baidu &amp; Google</h2><p>Tutorial Link: <a href="https://www.jianshu.com/p/25145964abf3">Tutorial on how to add your blog in Google &amp; Baidu</a></p><p>Another tutorial: <a href="http://tengj.github.io/2016/03/14/hexo6seo/">Tutorial on how to add your blog in Google &amp; Baidu</a></p>]]></content>
       
       
       <categories>
