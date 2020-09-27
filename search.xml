@@ -3,6 +3,29 @@
   
     
     <entry>
+      <title>Tmux Basics</title>
+      <link href="/2020/09/27/tmux-notes/"/>
+      <url>/2020/09/27/tmux-notes/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Tmux-Basics"><a href="#Tmux-Basics" class="headerlink" title="Tmux Basics"></a>Tmux Basics</h1><ul><li>Referenced from: <a href="https://zhuanlan.zhihu.com/p/27915505">WoodenRobot</a></li></ul><h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><ul><li><p>Arch: <code>sudo pacman -S tmux</code></p></li><li><p>Ubuntu: <code>sudo apt-get install tmux</code></p></li><li><p>MacOS: <code>brew install tmux</code></p></li></ul><h2 id="Tmux-Basic-Elements"><a href="#Tmux-Basic-Elements" class="headerlink" title="Tmux Basic Elements"></a>Tmux Basic Elements</h2><ul><li>Session: Create a tmux workspace session</li><li>Window: Contain multiple panes</li><li>Pane: A window can be splited into multiple panes</li></ul><h2 id="Basic-Commands"><a href="#Basic-Commands" class="headerlink" title="Basic Commands"></a>Basic Commands</h2><ul><li>Check all Sessions: <code>tmux ls</code></li><li>Create New Session: <code>tmux new -s session-name</code></li><li>Create New Session without specific name(not recommended): <code>tmux new</code></li><li>Disconnect from current session: <code>tmux detach</code> or <code>ctrl + b + d</code></li><li>Reconnect the first session on the list: <code>tmux a</code></li><li>Reconnect a specific session: <code>tmux a -t session-name</code></li><li>Shut down a session(and all programs in it): <code>tmux kill-session -t session-name</code> or <code>ctrl + d</code> to close everything</li></ul><h2 id="Shortcut-Keys"><a href="#Shortcut-Keys" class="headerlink" title="Shortcut Keys"></a>Shortcut Keys</h2><ul><li>Use <code>ctrl + b</code> as shortcut prefix: press <code>ctrl b</code> first, then press other keys</li><li>Help: <code>?</code></li><li>Display current time in current pane: <code>t</code></li><li>Session Mgmt<ul><li>List all sessions: <code>s</code></li><li>Rename current session: <code>$</code></li><li>Disconnect current session: <code>d</code></li></ul></li><li>Window Mgmt<ul><li>Create a new window: <code>c</code></li><li>Rename current window: <code>,</code></li><li>List all windows: <code>w</code></li><li>Horizontal Split: <code>%</code></li><li>Vertical Split: <code>&quot;</code></li><li>Select Next Window: <code>n</code></li><li>Select Previous Window: <code>p</code></li><li>Select No. 0-9 Window: <code>0-9</code></li></ul></li><li>Pane Mgmt<ul><li>Create horizontal pane: <code>%</code></li><li>Create vertical pane: <code>&quot;</code></li><li>Check the index of current pane: <code>q</code></li><li>Switch between panes: <code>o</code></li><li>Switch the position with next pane: <code>&#125;</code></li><li>Switch the position with previous pane: <code>&#123;</code></li><li>Display current pane in the new window: <code>!</code></li><li>Close current pane: <code>x</code></li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Tools </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Tools </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>论文的内容与结构</title>
       <link href="/2020/09/18/The-Structure-of-Research-Papers/"/>
       <url>/2020/09/18/The-Structure-of-Research-Papers/</url>
