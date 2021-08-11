@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://williamlwclwc.github.io/2021/03/05/novel-objects-caption-overview/</loc>
+    <lastmod>2021-08-01T10:04:55.415Z</lastmod>
+  </url>  <url>
+    <loc>http://williamlwclwc.github.io/2021/03/09/Vim-Basics/</loc>
+    <lastmod>2021-08-01T09:43:46.931Z</lastmod>
+  </url>  <url>
+    <loc>http://williamlwclwc.github.io/2019/06/13/Introduction/</loc>
+    <lastmod>2021-03-07T05:54:00.079Z</lastmod>
+  </url>  <url>
     <loc>http://williamlwclwc.github.io/2020/09/27/tmux-notes/</loc>
-    <lastmod>2020-09-27T06:04:22.343Z</lastmod>
+    <lastmod>2021-03-07T05:29:57.462Z</lastmod>
+  </url>  <url>
+    <loc>http://williamlwclwc.github.io/2019/06/11/git-basic/</loc>
+    <lastmod>2021-03-05T07:36:45.705Z</lastmod>
+  </url>  <url>
+    <loc>http://williamlwclwc.github.io/2021/03/04/fix-mac-keyboard-on-linux/</loc>
+    <lastmod>2021-03-05T07:36:42.372Z</lastmod>
+  </url>  <url>
+    <loc>http://williamlwclwc.github.io/2019/06/11/git-undo/</loc>
+    <lastmod>2021-03-05T07:36:34.172Z</lastmod>
+  </url>  <url>
+    <loc>http://williamlwclwc.github.io/2019/06/12/md-notes/</loc>
+    <lastmod>2021-03-05T07:36:29.805Z</lastmod>
   </url>  <url>
     <loc>http://williamlwclwc.github.io/2020/09/18/The-Structure-of-Research-Papers/</loc>
     <lastmod>2020-09-18T10:10:09.815Z</lastmod>
-  </url>  <url>
-    <loc>http://williamlwclwc.github.io/2019/06/13/Introduction/</loc>
-    <lastmod>2020-09-18T09:39:07.934Z</lastmod>
-  </url>  <url>
-    <loc>http://williamlwclwc.github.io/2019/06/11/git-undo/</loc>
-    <lastmod>2020-09-04T06:51:36.016Z</lastmod>
-  </url>  <url>
-    <loc>http://williamlwclwc.github.io/2019/06/11/git-basic/</loc>
-    <lastmod>2020-09-04T06:51:26.079Z</lastmod>
-  </url>  <url>
-    <loc>http://williamlwclwc.github.io/2019/06/12/md-notes/</loc>
-    <lastmod>2020-09-04T06:45:19.160Z</lastmod>
   </url>
 </urlset>

@@ -3,11 +3,11 @@
   
     
     <entry>
-      <title>Tmux Basics</title>
-      <link href="/2020/09/27/tmux-notes/"/>
-      <url>/2020/09/27/tmux-notes/</url>
+      <title>Vim Notes</title>
+      <link href="/2021/03/09/Vim-Basics/"/>
+      <url>/2021/03/09/Vim-Basics/</url>
       
-        <content type="html"><![CDATA[<h1 id="Tmux-Basics"><a href="#Tmux-Basics" class="headerlink" title="Tmux Basics"></a>Tmux Basics</h1><ul><li>Referenced from: <a href="https://zhuanlan.zhihu.com/p/27915505">WoodenRobot</a></li></ul><h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><ul><li><p>Arch: <code>sudo pacman -S tmux</code></p></li><li><p>Ubuntu: <code>sudo apt-get install tmux</code></p></li><li><p>MacOS: <code>brew install tmux</code></p></li></ul><h2 id="Tmux-Basic-Elements"><a href="#Tmux-Basic-Elements" class="headerlink" title="Tmux Basic Elements"></a>Tmux Basic Elements</h2><ul><li>Session: Create a tmux workspace session</li><li>Window: Contain multiple panes</li><li>Pane: A window can be splited into multiple panes</li></ul><h2 id="Basic-Commands"><a href="#Basic-Commands" class="headerlink" title="Basic Commands"></a>Basic Commands</h2><ul><li>Check all Sessions: <code>tmux ls</code></li><li>Create New Session: <code>tmux new -s session-name</code></li><li>Create New Session without specific name(not recommended): <code>tmux new</code></li><li>Disconnect from current session: <code>tmux detach</code> or <code>ctrl + b + d</code></li><li>Reconnect the first session on the list: <code>tmux a</code></li><li>Reconnect a specific session: <code>tmux a -t session-name</code></li><li>Shut down a session(and all programs in it): <code>tmux kill-session -t session-name</code> or <code>ctrl + d</code> to close everything</li></ul><h2 id="Shortcut-Keys"><a href="#Shortcut-Keys" class="headerlink" title="Shortcut Keys"></a>Shortcut Keys</h2><ul><li>Use <code>ctrl + b</code> as shortcut prefix: press <code>ctrl b</code> first, then press other keys</li><li>Help: <code>?</code></li><li>Display current time in current pane: <code>t</code></li><li>Session Mgmt<ul><li>List all sessions: <code>s</code></li><li>Rename current session: <code>$</code></li><li>Disconnect current session: <code>d</code></li></ul></li><li>Window Mgmt<ul><li>Create a new window: <code>c</code></li><li>Rename current window: <code>,</code></li><li>List all windows: <code>w</code></li><li>Horizontal Split: <code>%</code></li><li>Vertical Split: <code>&quot;</code></li><li>Select Next Window: <code>n</code></li><li>Select Previous Window: <code>p</code></li><li>Select No. 0-9 Window: <code>0-9</code></li></ul></li><li>Pane Mgmt<ul><li>Create horizontal pane: <code>%</code></li><li>Create vertical pane: <code>&quot;</code></li><li>Check the index of current pane: <code>q</code></li><li>Switch between panes: <code>o</code></li><li>Switch the position with next pane: <code>&#125;</code></li><li>Switch the position with previous pane: <code>&#123;</code></li><li>Display current pane in the new window: <code>!</code></li><li>Close current pane: <code>x</code></li></ul></li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="Vim-Notes"><a href="#Vim-Notes" class="headerlink" title="Vim Notes"></a>Vim Notes</h1><h2 id="Open-Create-new-File-with-Vim"><a href="#Open-Create-new-File-with-Vim" class="headerlink" title="Open/Create new File with Vim"></a>Open/Create new File with Vim</h2><ul><li><code>$ vim &lt;filename&gt;</code><ul><li>If <code>&lt;filename&gt;</code> already existed, then open file with vim</li><li>If <code>&lt;filename&gt;</code> does not existed yet, then create a new file named <code>&lt;filename&gt;</code> with vim</li></ul></li></ul><h2 id="How-to-Quit-Save"><a href="#How-to-Quit-Save" class="headerlink" title="How to Quit/Save"></a>How to Quit/Save</h2><ul><li>In Normal Mode:<ul><li>Save: <code>:w&lt;Enter&gt;</code></li><li>Quit without saving: <code>:q&lt;Enter&gt;</code></li><li>Quit with saving: <code>:wq&lt;Enter&gt;</code></li></ul></li></ul><h2 id="How-to-switch-between-Normal-Mode-and-Insert-Mode"><a href="#How-to-switch-between-Normal-Mode-and-Insert-Mode" class="headerlink" title="How to switch between Normal Mode and Insert Mode"></a>How to switch between Normal Mode and Insert Mode</h2><h3 id="Normal-Mode-gt-Insert-Mode"><a href="#Normal-Mode-gt-Insert-Mode" class="headerlink" title="Normal Mode -&gt; Insert Mode"></a>Normal Mode -&gt; Insert Mode</h3><ul><li>Insert:<ul><li>Enter insert mode before current cursor positon: <code>i</code></li><li>Enter insert mode at the start of the current line: <code>I</code></li></ul></li><li>Append:<ul><li>Enter insert mode after current cursor positon: <code>a</code></li><li>Enter insert mode at the end of the current line: <code>A</code></li></ul></li><li>Open a new line:<ul><li>Enter insert mode with a new line below current line: <code>o</code> (Open a new line below)</li><li>Enter insert mode with a new line above current line: <code>O</code> (Open a new line above)</li></ul></li><li>Go to the previous edit position(and enter insert mode): <code>gi</code></li><li>Delete current character/line and switch to insert mode: <code>s</code> / <code>S</code></li></ul><h3 id="Insert-Mode-gt-Normal-Mode"><a href="#Insert-Mode-gt-Normal-Mode" class="headerlink" title="Insert Mode -&gt; Normal Mode"></a>Insert Mode -&gt; Normal Mode</h3><ul><li><code>&lt;ESC&gt;</code></li><li><code>&lt;Ctrl&gt;+[</code></li><li><code>&lt;Ctrl&gt;+c</code> (Could interrupt some plugins)</li></ul><h2 id="Command-Mode"><a href="#Command-Mode" class="headerlink" title="Command Mode"></a>Command Mode</h2><ul><li>In Normal Mode, Enter <code>:</code> to enter Command Mode, and Press Enter to confirm a command<ul><li>Save: <code>:w</code></li><li>Quit: <code>:q</code>, can also be used to quit splitted windows</li><li>Vertical Split: <code>:vs</code></li><li>(Horizontal)Split: <code>:sp</code></li><li>Replace All: <code>:% s/&lt;string to be replaced&gt;/&lt;new string we want&gt;/g</code></li></ul></li></ul><h2 id="Visual-Mode"><a href="#Visual-Mode" class="headerlink" title="Visual Mode"></a>Visual Mode</h2><ul><li>In Normal Mode, Enter <code>v</code> to enter Visual Mode, continue selecting with direction keys<ul><li>Select the whole line: <code>V</code></li><li>Select a block: <code>&lt;Ctrl&gt;+V</code></li></ul></li></ul><h2 id="Insert-Mode"><a href="#Insert-Mode" class="headerlink" title="Insert Mode"></a>Insert Mode</h2><ul><li>Delete previous character: <code>&lt;Ctrl&gt;+h</code></li><li>Delete previous word: <code>&lt;Ctrl&gt;+w</code></li><li>Delete current line: <code>&lt;Ctrl&gt;+u</code></li></ul><h2 id="Normal-Mode"><a href="#Normal-Mode" class="headerlink" title="Normal Mode"></a>Normal Mode</h2><ul><li>Undo: <code>u</code></li></ul><h3 id="Delete"><a href="#Delete" class="headerlink" title="Delete"></a>Delete</h3><ul><li>Delete character: <code>x</code></li><li>Delete n characters: <code>nx</code> (n is a number)</li><li>Delete word:<ul><li>Delete word only: <code>diw</code></li><li>Delete around word(include the spaces around the word): <code>daw</code> or <code>dw</code></li></ul></li><li>Delete line: <code>dd</code></li><li>Delete n line: <code>ndd</code> (n is a number)</li><li>Delete content until x(e.g. ‘)’): <code>dt)</code></li><li>Delete content unitl the end of the line: <code>d$</code></li><li>Delete content from the start of the line to current cursor: <code>d0</code></li></ul><h3 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h3><ul><li>Replace character with ‘x’: <code>rx</code></li><li>Delete current character/line and switch to insert mode: <code>s</code> / <code>S</code></li><li>Delete n character/line and switch to insert mode: <code>ns</code> / <code>nS</code></li><li>Change word: <code>cw</code></li><li>Change word until x(e.g. ‘)’): <code>ct)</code></li></ul><h3 id="Copy-Paste"><a href="#Copy-Paste" class="headerlink" title="Copy Paste"></a>Copy Paste</h3><ul><li>Copy: select with visual mode, then <code>y</code></li><li>Copy current line: <code>yy</code></li><li>Copy to system clipboard: <code>&quot;+y</code> or <code>:set clipboard=unnamed</code> then <code>y</code></li><li>Paste: <code>p</code></li></ul><h2 id="Navigation"><a href="#Navigation" class="headerlink" title="Navigation"></a>Navigation</h2><h3 id="Normal-Navigation"><a href="#Normal-Navigation" class="headerlink" title="Normal Navigation"></a>Normal Navigation</h3><ul><li>Support direction keys</li><li>h(left) j(down) k(up) l(right)</li></ul><h3 id="Navigation-by-words"><a href="#Navigation-by-words" class="headerlink" title="Navigation by words"></a>Navigation by words</h3><ul><li>word: split by all kinds of tokens</li><li>WORD: split by spaces</li><li>Move to the start of the next word/WORD: <code>w</code> / <code>W</code></li><li>Move to the end of the next word/WORD: <code>e</code> / <code>E</code></li><li>Move to the start of the previous word/WORD: <code>b</code> / <code>B</code></li></ul><h3 id="Search-a-specific-char-inline"><a href="#Search-a-specific-char-inline" class="headerlink" title="Search a specific char inline"></a>Search a specific char inline</h3><ul><li>Search after current cursor position:<ul><li>Go to a specific character<code>&#123;char&#125;</code>: <code>f&#123;char&#125;</code></li><li>Go to the previous character of <code>&#123;char&#125;</code>: <code>t&#123;char&#125;</code></li></ul></li><li>Search before current cursor position:<ul><li>Go to a specific character<code>&#123;char&#125;</code>: <code>F&#123;char&#125;</code></li><li>Go to the next character of <code>&#123;char&#125;</code></li></ul></li><li>Go to the previous/next <code>&#123;char&#125;</code> with: <code>;</code> / <code>,</code></li></ul><h3 id="Horizontal-Navigation"><a href="#Horizontal-Navigation" class="headerlink" title="Horizontal Navigation"></a>Horizontal Navigation</h3><ul><li>Move to the first character of the line: <code>0</code></li><li>Move to the first non-space character of the line: <code>^</code></li><li>Move to the last character of the line: <code>$</code></li><li>Move to the last non-space character of the line: <code>g_</code></li></ul><h3 id="Page-Navigation"><a href="#Page-Navigation" class="headerlink" title="Page Navigation"></a>Page Navigation</h3><ul><li>Move to start of the file: <code>gg</code></li><li>Move to the end of the file: <code>G</code></li><li>Back to previous position: <code>&lt;Ctrl+o&gt;</code></li><li>Go to the head of the screen: <code>H</code></li><li>Go to the middle of the screen: <code>M</code></li><li>Go to the Lower of the screen: <code>L</code></li><li>Page up(upward): <code>&lt;Ctrl&gt;+u</code></li><li>Page down(forward): <code>&lt;Ctrl+f&gt;</code></li><li>Set current line to the middle of the screen: <code>zz</code></li></ul>]]></content>
       
       
       <categories>
@@ -19,7 +19,86 @@
       
         <tags>
             
-            <tag> Tools </tag>
+            <tag> Vim </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Novel Object Captioning Overview</title>
+      <link href="/2021/03/05/novel-objects-caption-overview/"/>
+      <url>/2021/03/05/novel-objects-caption-overview/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Novel-Object-Captioning-Overview"><a href="#Novel-Object-Captioning-Overview" class="headerlink" title="Novel Object Captioning Overview"></a>Novel Object Captioning Overview</h1><h2 id="New-Challenge"><a href="#New-Challenge" class="headerlink" title="New Challenge"></a>New Challenge</h2><ul><li>Caption images with objects that are not appearing in the training phase: <a href="https://nocaps.org/">Nocaps Challenge</a></li></ul><h2 id="Before-Nocaps-Dataset"><a href="#Before-Nocaps-Dataset" class="headerlink" title="Before Nocaps Dataset"></a>Before Nocaps Dataset</h2><ul><li><a href="https://arxiv.org/abs/1707.07998">Bottom-Up and Top-Down Attention</a></li><li><a href="https://arxiv.org/abs/1803.09845">Neural Baby Talk(NBT)</a></li></ul><h2 id="Reinforcement-Learning"><a href="#Reinforcement-Learning" class="headerlink" title="Reinforcement Learning"></a>Reinforcement Learning</h2><ul><li><a href="https://arxiv.org/abs/1612.00563">SCST</a></li><li><a href="http://zishun.me/Blog/2019/05/08/Self-critical/">SCST with SPICE</a></li></ul><h2 id="Pretrained-Models-amp-Current-SOTA"><a href="#Pretrained-Models-amp-Current-SOTA" class="headerlink" title="Pretrained Models &amp; Current SOTA"></a>Pretrained Models &amp; Current SOTA</h2><ul><li><a href="https://www.microsoft.com/en-us/research/blog/objects-are-the-secret-key-to-revealing-the-world-between-vision-and-language/">Microsoft Oscar</a></li><li><a href="https://www.microsoft.com/en-us/research/blog/novel-object-captioning-surpasses-human-performance-on-benchmarks/">Microsoft VIVO</a></li><li><a href="https://arxiv.org/abs/2101.00529">Microsoft VinVL</a>: For Nocaps part, it is the same as VIVO except they trained a new object detector themselves and achieved even better performance.</li></ul><h2 id="Open-Images-Detectors"><a href="#Open-Images-Detectors" class="headerlink" title="Open Images Detectors"></a>Open Images Detectors</h2><ul><li><a href="https://github.com/nocaps-org/image-feature-extractors">Nocaps Default Detector</a></li><li><a href="https://github.com/xingyizhou/UniDet">2020 Open Images Challenge #1 UT Austin UniDet</a></li><li><a href="https://github.com/Sense-X/TSD">2019 Open Images Challenge #1 SenseTime TSD</a></li></ul><h2 id="Reading-List-on-Arxiv"><a href="#Reading-List-on-Arxiv" class="headerlink" title="Reading List(on Arxiv)"></a>Reading List(on Arxiv)</h2><ul><li><a href="https://arxiv.org/abs/1707.07998">Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering</a></li><li><a href="https://arxiv.org/abs/1803.09845">Neural Baby Talk</a></li><li><a href="https://arxiv.org/abs/1812.08658">nocaps: novel object captioning at scale</a></li><li><a href="https://arxiv.org/abs/2004.06165">Oscar: Object-Semantics Aligned Pre-training for Vision-Language Tasks</a></li><li><a href="https://arxiv.org/abs/2009.13682">VIVO: Surpassing Human Performance in Novel Object Captioning with Visual Vocabulary Pre-Training</a></li><li><a href="https://arxiv.org/abs/2101.00529">VinVL: Making Visual Representations Matter in Vision-Language Models</a></li><li><a href="https://arxiv.org/abs/1612.00563">Self-critical Sequence Training for Image Captioning</a></li><li><a href="http://zishun.me/Blog/2019/05/08/Self-critical/">Self-critical Sequence Training for Image Captioning with SPICE</a></li><li><a href="https://arxiv.org/abs/2101.09865">ECOL-R: Encouraging Copying in Novel Object Captioning with Reinforcement Learning</a></li><li><a href="https://arxiv.org/abs/1411.5726">CIDEr: Consensus-based Image Description Evaluation</a></li><li><a href="https://arxiv.org/abs/1607.08822">SPICE: Semantic Propositional Image Caption Evaluation</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> AI </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Research </tag>
+            
+            <tag> AI </tag>
+            
+            <tag> NLP </tag>
+            
+            <tag> CV </tag>
+            
+            <tag> Image Caption </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>修复Linux外接键盘F1-F12键异常问题</title>
+      <link href="/2021/03/04/fix-mac-keyboard-on-linux/"/>
+      <url>/2021/03/04/fix-mac-keyboard-on-linux/</url>
+      
+        <content type="html"><![CDATA[<h1 id="修复ArchLinux系统外接键盘F1-F12只有功能键的问题"><a href="#修复ArchLinux系统外接键盘F1-F12只有功能键的问题" class="headerlink" title="修复ArchLinux系统外接键盘F1-F12只有功能键的问题"></a>修复ArchLinux系统外接键盘F1-F12只有功能键的问题</h1><p>参考文章:</p><ul><li><a href="https://caosiyang.github.io/posts/2020/07/22/using-keychron-k6-on-manjaro/">一篇更加详细的文章</a></li><li><a href="https://wiki.archlinux.org/index.php/Apple_Keyboard">Arch Wiki</a></li></ul><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>购入兼容MacOS的机械键盘，连接Windows系统完全正常，但是连接到ArchLinux时发现键盘的F1-F12只能触发功能/多媒体控制键(原本应该Fn+Fx触发)</p><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>修改fnmode:</p><ul><li>sudo 进入编辑 /etc/modprobe.d/hid_apple.conf（如果没有则新建）</li><li>写入 <code>options hid_apple fnmode=2</code></li><li>fnmode有3个模式：<ul><li>0，禁用fn键</li><li>1，启用fn键，F1-F12是特殊功能键（多媒体控制），fn+F1-F12则是F1-F12</li><li>2，启用fn键，F1-F12即自身，fn+F1-F12则是特殊功能键（多媒体控制）</li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Systems </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> 环境配置 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Tmux Basics</title>
+      <link href="/2020/09/27/tmux-notes/"/>
+      <url>/2020/09/27/tmux-notes/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Tmux-Basics"><a href="#Tmux-Basics" class="headerlink" title="Tmux Basics"></a>Tmux Basics</h1><ul><li>Referenced from: <a href="https://zhuanlan.zhihu.com/p/27915505">WoodenRobot</a></li></ul><h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><ul><li><p>Arch: <code>sudo pacman -S tmux</code></p></li><li><p>Ubuntu: <code>sudo apt-get install tmux</code></p></li><li><p>MacOS: <code>brew install tmux</code></p></li></ul><h2 id="Tmux-Basic-Elements"><a href="#Tmux-Basic-Elements" class="headerlink" title="Tmux Basic Elements"></a>Tmux Basic Elements</h2><ul><li>Session: Create a tmux workspace session</li><li>Window: Contain multiple panes</li><li>Pane: A window can be splited into multiple panes</li></ul><h2 id="Basic-Commands"><a href="#Basic-Commands" class="headerlink" title="Basic Commands"></a>Basic Commands</h2><ul><li>Check all Sessions: <code>tmux ls</code></li><li>Create New Session: <code>tmux new -s session-name</code></li><li>Create New Session without specific name(not recommended): <code>tmux new</code></li><li>Disconnect from current session: <code>tmux detach</code> or <code>ctrl + b + d</code></li><li>Reconnect the first session on the list: <code>tmux a</code></li><li>Reconnect a specific session: <code>tmux a -t session-name</code></li><li>Close current Window: <code>exit</code></li><li>Shut down a session(and all programs in it): <code>tmux kill-session -t session-name</code> or <code>ctrl + d</code> to close everything</li></ul><h2 id="Shortcut-Keys"><a href="#Shortcut-Keys" class="headerlink" title="Shortcut Keys"></a>Shortcut Keys</h2><ul><li>Use <code>ctrl + b</code> as shortcut prefix: press <code>ctrl b</code> first, then press other keys</li><li>Help: <code>?</code></li><li>Display current time in current pane: <code>t</code></li><li>Session Mgmt<ul><li>List all sessions: <code>s</code></li><li>Rename current session: <code>$</code></li><li>Disconnect current session: <code>d</code></li></ul></li><li>Window Mgmt<ul><li>Create a new window: <code>c</code></li><li>Rename current window: <code>,</code></li><li>List all windows: <code>w</code></li><li>Horizontal Split: <code>%</code></li><li>Vertical Split: <code>&quot;</code></li><li>Select Next Window: <code>n</code></li><li>Select Previous Window: <code>p</code></li><li>Select No. 0-9 Window: <code>0-9</code></li></ul></li><li>Pane Mgmt<ul><li>Create horizontal pane: <code>%</code></li><li>Create vertical pane: <code>&quot;</code></li><li>Check the index of current pane: <code>q</code></li><li>Switch between panes: <code>o</code></li><li>Switch the position with next pane: <code>&#125;</code></li><li>Switch the position with previous pane: <code>&#123;</code></li><li>Display current pane in the new window: <code>!</code></li><li>Close current pane: <code>x</code></li><li>Scroll through current Pane: <code>[</code></li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Tools </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Tmux </tag>
             
         </tags>
       
@@ -83,7 +162,7 @@
       
       <categories>
           
-          <category> Programming languages </category>
+          <category> Tools </category>
           
       </categories>
       
@@ -101,12 +180,12 @@
       <link href="/2019/06/11/git-basic/"/>
       <url>/2019/06/11/git-basic/</url>
       
-        <content type="html"><![CDATA[<h2 id="git-it-patchwork-中文版学习笔记"><a href="#git-it-patchwork-中文版学习笔记" class="headerlink" title="git-it(patchwork) 中文版学习笔记"></a>git-it(patchwork) 中文版学习笔记</h2><ol><li><p>查看git的版本：git –version</p></li><li><p>设置本地git的用户名和邮箱：</p><p>git config –global user.name “yourname”</p><p>git config –global user.email “<a href="mailto:&#x79;&#x6f;&#117;&#114;&#101;&#109;&#97;&#105;&#x6c;&#64;&#x65;&#120;&#x61;&#109;&#112;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#x6d;">&#x79;&#x6f;&#117;&#114;&#101;&#109;&#97;&#105;&#x6c;&#64;&#x65;&#120;&#x61;&#109;&#112;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#x6d;</a>“</p></li><li><p>创建本地git仓库：</p><p>在当前目录下创建名为Filename的文件夹：mkdir &lt;文件名&gt;</p><p>进入新创建的文件夹： cd &lt;文件名&gt;</p><p>将文件夹设置为git仓库： git init</p></li><li><p>向git中提交变更：</p><p>检查git仓库的状态：git status</p><p>向git中添加要变更的文件：git add &lt;文件名&gt; 或添加全部 git add .</p><p>向git提交刚刚添加的文件及其备注信息：git commit -m “本次提交的备注信息”</p><p>查看要更新的文件的改动信息(提交变更之前)：git diff</p></li><li><p>绑定github账号：</p><p>绑定github账号：git config –global user.username &lt;你的github用户名&gt;</p><p>查看用户状态：git config –global user.username</p></li><li><p>创建github远端仓库：</p><p>首先在github上新建一个repo</p><p>添加远端repo的url： git remote add origin &lt;远端链接&gt;</p><p>向名为origin的远端的名为master的分支推送本地git的文件：git push origin master</p></li><li><p>fork&amp;clone仓库：</p><p>选择目录：用cd ..命令返回home,再用cd进入到想要的目录下</p><p>复制仓库到本地：git clone &lt;该仓库的下载url&gt;</p><p>进入clone到本地的仓库的文件夹: cd 文件夹名称</p><p>查看本地复制的仓库和github上别人的仓库是否链接：git remote -v</p><p>添加一个除origin外的仓库：git remote add &lt;远端仓库名称&gt; &lt;目标仓库url&gt;</p><p>更改一个远端仓库的url地址：git remote set-url &lt;远端仓库名称&gt; &lt;自己(fork)的仓库url&gt;</p></li><li><p>添加一个分支：</p><p>与第7步相同，进入目标仓库的目录下</p><p>查看当前分支状态：git status</p><p>添加一个新的分支：git branch &lt;分支名&gt;</p><p>进入/切换到某一个分支：git checkout &lt;分支名&gt;</p><p>之后在本地进行修改，然后按照第4步中的操作在新分支内提交变更：</p><p>git status</p><p>git add &lt;路径/文件名&gt;</p><p>git commit -m “本次提交的备注信息”</p><p>将分支更改内容同步到origin上：git push origin &lt;分支名&gt;</p></li><li><p>与collaborators合作：</p><p>在仓库settings中，找到collaborator，添加合作者的用户名</p><p>拉取变更之前查看更改内容：git fetch –dry-run</p><p>拉取更新内容：git pull &lt;远端名&gt; &lt;分支名&gt;</p></li><li><p>提交pull request：</p><p>在对方的仓库中找到new pull request按钮</p><p>选择compare across fork，并找到对方原来的分支和自己修改后的分支</p><p>之后点击create pull request，添加备注信息，然后提交</p></li><li><p>merge 分支</p><p>进入主干分支：git checkout &lt;主干分支名&gt;</p><p>融合被融合的副分支：git merge &lt;副分支名&gt;</p><p>删除已经成功融合后的副分支：git branch -d &lt;分支名&gt;</p><p>删除远端的分支：git push &lt;远端名&gt; –delete &lt;分支名&gt;</p></li></ol>]]></content>
+        <content type="html"><![CDATA[<h2 id="git-it-patchwork-中文版学习笔记"><a href="#git-it-patchwork-中文版学习笔记" class="headerlink" title="git-it(patchwork) 中文版学习笔记"></a>git-it(patchwork) 中文版学习笔记</h2><ol><li><p>查看git的版本：git –version</p></li><li><p>设置本地git的用户名和邮箱：</p><p>git config –global user.name “yourname”</p><p>git config –global user.email “<a href="mailto:&#x79;&#x6f;&#x75;&#x72;&#101;&#x6d;&#x61;&#x69;&#x6c;&#64;&#x65;&#x78;&#x61;&#109;&#112;&#x6c;&#x65;&#x2e;&#99;&#111;&#x6d;">&#x79;&#x6f;&#x75;&#x72;&#101;&#x6d;&#x61;&#x69;&#x6c;&#64;&#x65;&#x78;&#x61;&#109;&#112;&#x6c;&#x65;&#x2e;&#99;&#111;&#x6d;</a>“</p></li><li><p>创建本地git仓库：</p><p>在当前目录下创建名为Filename的文件夹：mkdir &lt;文件名&gt;</p><p>进入新创建的文件夹： cd &lt;文件名&gt;</p><p>将文件夹设置为git仓库： git init</p></li><li><p>向git中提交变更：</p><p>检查git仓库的状态：git status</p><p>向git中添加要变更的文件：git add &lt;文件名&gt; 或添加全部 git add .</p><p>向git提交刚刚添加的文件及其备注信息：git commit -m “本次提交的备注信息”</p><p>查看要更新的文件的改动信息(提交变更之前)：git diff</p></li><li><p>绑定github账号：</p><p>绑定github账号：git config –global user.username &lt;你的github用户名&gt;</p><p>查看用户状态：git config –global user.username</p></li><li><p>创建github远端仓库：</p><p>首先在github上新建一个repo</p><p>添加远端repo的url： git remote add origin &lt;远端链接&gt;</p><p>向名为origin的远端的名为master的分支推送本地git的文件：git push origin master</p></li><li><p>fork&amp;clone仓库：</p><p>选择目录：用cd ..命令返回home,再用cd进入到想要的目录下</p><p>复制仓库到本地：git clone &lt;该仓库的下载url&gt;</p><p>进入clone到本地的仓库的文件夹: cd 文件夹名称</p><p>查看本地复制的仓库和github上别人的仓库是否链接：git remote -v</p><p>添加一个除origin外的仓库：git remote add &lt;远端仓库名称&gt; &lt;目标仓库url&gt;</p><p>更改一个远端仓库的url地址：git remote set-url &lt;远端仓库名称&gt; &lt;自己(fork)的仓库url&gt;</p></li><li><p>添加一个分支：</p><p>与第7步相同，进入目标仓库的目录下</p><p>查看当前分支状态：git status</p><p>添加一个新的分支：git branch &lt;分支名&gt;</p><p>进入/切换到某一个分支：git checkout &lt;分支名&gt;</p><p>之后在本地进行修改，然后按照第4步中的操作在新分支内提交变更：</p><p>git status</p><p>git add &lt;路径/文件名&gt;</p><p>git commit -m “本次提交的备注信息”</p><p>将分支更改内容同步到origin上：git push origin &lt;分支名&gt;</p></li><li><p>与collaborators合作：</p><p>在仓库settings中，找到collaborator，添加合作者的用户名</p><p>拉取变更之前查看更改内容：git fetch –dry-run</p><p>拉取更新内容：git pull &lt;远端名&gt; &lt;分支名&gt;</p></li><li><p>提交pull request：</p><p>在对方的仓库中找到new pull request按钮</p><p>选择compare across fork，并找到对方原来的分支和自己修改后的分支</p><p>之后点击create pull request，添加备注信息，然后提交</p></li><li><p>merge 分支</p><p>进入主干分支：git checkout &lt;主干分支名&gt;</p><p>融合被融合的副分支：git merge &lt;副分支名&gt;</p><p>删除已经成功融合后的副分支：git branch -d &lt;分支名&gt;</p><p>删除远端的分支：git push &lt;远端名&gt; –delete &lt;分支名&gt;</p></li></ol>]]></content>
       
       
       <categories>
           
-          <category> Development Tools </category>
+          <category> Tools </category>
           
       </categories>
       
@@ -129,7 +208,7 @@
       
       <categories>
           
-          <category> Development Tools </category>
+          <category> Tools </category>
           
       </categories>
       

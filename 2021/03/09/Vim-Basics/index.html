@@ -1,0 +1,260 @@
+<!DOCTYPE html><html data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vim Notes | Wenchang Liu's Blog</title><meta name="description" content="Vim NotesOpen&#x2F;Create new File with Vim $ vim &lt;filename&gt; If &lt;filename&gt; already existed, then open file with vim If &lt;filename&gt; does not existed yet, then create a new file named &lt;fi"><meta name="keywords" content="Vim"><meta name="author" content="William Wenchang Liu"><meta name="copyright" content="William Wenchang Liu"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://williamlwclwc.github.io/2021/03/09/Vim-Basics/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="Vim Notes"><meta property="og:url" content="http://williamlwclwc.github.io/2021/03/09/Vim-Basics/"><meta property="og:site_name" content="Wenchang Liu's Blog"><meta property="og:description" content="Vim NotesOpen&#x2F;Create new File with Vim $ vim &lt;filename&gt; If &lt;filename&gt; already existed, then open file with vim If &lt;filename&gt; does not existed yet, then create a new file named &lt;fi"><meta property="og:image" content="https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png"><meta property="article:published_time" content="2021-03-09T13:15:52.000Z"><meta property="article:modified_time" content="2021-08-01T09:43:46.931Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  runtime: false,
+  copyright: {"limitCount":50,"languages":{"author":"Author: William Wenchang Liu","link":"Link: ","source":"Source: Wenchang Liu's Blog","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source."}},
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: true,
+  postUpdate: '2021-08-01 17:43:46'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 5.0.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Articles</div><div class="length_num">9</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">Tags</div><div class="length_num">13</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">Categories</div><div class="length_num">5</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div id="body-wrap"><div id="sidebar"><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Vim-Notes"><span class="toc-number">1.</span> <span class="toc-text">Vim Notes</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Open-Create-new-File-with-Vim"><span class="toc-number">1.1.</span> <span class="toc-text">Open&#x2F;Create new File with Vim</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-Quit-Save"><span class="toc-number">1.2.</span> <span class="toc-text">How to Quit&#x2F;Save</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-switch-between-Normal-Mode-and-Insert-Mode"><span class="toc-number">1.3.</span> <span class="toc-text">How to switch between Normal Mode and Insert Mode</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Normal-Mode-gt-Insert-Mode"><span class="toc-number">1.3.1.</span> <span class="toc-text">Normal Mode -&gt; Insert Mode</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Insert-Mode-gt-Normal-Mode"><span class="toc-number">1.3.2.</span> <span class="toc-text">Insert Mode -&gt; Normal Mode</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Command-Mode"><span class="toc-number">1.4.</span> <span class="toc-text">Command Mode</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Visual-Mode"><span class="toc-number">1.5.</span> <span class="toc-text">Visual Mode</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Insert-Mode"><span class="toc-number">1.6.</span> <span class="toc-text">Insert Mode</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Normal-Mode"><span class="toc-number">1.7.</span> <span class="toc-text">Normal Mode</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Delete"><span class="toc-number">1.7.1.</span> <span class="toc-text">Delete</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Update"><span class="toc-number">1.7.2.</span> <span class="toc-text">Update</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Copy-Paste"><span class="toc-number">1.7.3.</span> <span class="toc-text">Copy Paste</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Navigation"><span class="toc-number">1.8.</span> <span class="toc-text">Navigation</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Normal-Navigation"><span class="toc-number">1.8.1.</span> <span class="toc-text">Normal Navigation</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Navigation-by-words"><span class="toc-number">1.8.2.</span> <span class="toc-text">Navigation by words</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Search-a-specific-char-inline"><span class="toc-number">1.8.3.</span> <span class="toc-text">Search a specific char inline</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Horizontal-Navigation"><span class="toc-number">1.8.4.</span> <span class="toc-text">Horizontal Navigation</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Page-Navigation"><span class="toc-number">1.8.5.</span> <span class="toc-text">Page Navigation</span></a></li></ol></li></ol></li></ol></div></div></div><header class="post-bg" id="page-header" style="background-image: url(https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">Wenchang Liu's Blog</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">Vim Notes</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-03-09T13:15:52.000Z" title="Created 2021-03-09 21:15:52">2021-03-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-08-01T09:43:46.931Z" title="Updated 2021-08-01 17:43:46">2021-08-01</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Tools/">Tools</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h1 id="Vim-Notes"><a href="#Vim-Notes" class="headerlink" title="Vim Notes"></a>Vim Notes</h1><h2 id="Open-Create-new-File-with-Vim"><a href="#Open-Create-new-File-with-Vim" class="headerlink" title="Open/Create new File with Vim"></a>Open/Create new File with Vim</h2><ul>
+<li><code>$ vim &lt;filename&gt;</code><ul>
+<li>If <code>&lt;filename&gt;</code> already existed, then open file with vim</li>
+<li>If <code>&lt;filename&gt;</code> does not existed yet, then create a new file named <code>&lt;filename&gt;</code> with vim</li>
+</ul>
+</li>
+</ul>
+<h2 id="How-to-Quit-Save"><a href="#How-to-Quit-Save" class="headerlink" title="How to Quit/Save"></a>How to Quit/Save</h2><ul>
+<li>In Normal Mode:<ul>
+<li>Save: <code>:w&lt;Enter&gt;</code></li>
+<li>Quit without saving: <code>:q&lt;Enter&gt;</code></li>
+<li>Quit with saving: <code>:wq&lt;Enter&gt;</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="How-to-switch-between-Normal-Mode-and-Insert-Mode"><a href="#How-to-switch-between-Normal-Mode-and-Insert-Mode" class="headerlink" title="How to switch between Normal Mode and Insert Mode"></a>How to switch between Normal Mode and Insert Mode</h2><h3 id="Normal-Mode-gt-Insert-Mode"><a href="#Normal-Mode-gt-Insert-Mode" class="headerlink" title="Normal Mode -&gt; Insert Mode"></a>Normal Mode -&gt; Insert Mode</h3><ul>
+<li>Insert:<ul>
+<li>Enter insert mode before current cursor positon: <code>i</code></li>
+<li>Enter insert mode at the start of the current line: <code>I</code></li>
+</ul>
+</li>
+<li>Append:<ul>
+<li>Enter insert mode after current cursor positon: <code>a</code></li>
+<li>Enter insert mode at the end of the current line: <code>A</code></li>
+</ul>
+</li>
+<li>Open a new line:<ul>
+<li>Enter insert mode with a new line below current line: <code>o</code> (Open a new line below)</li>
+<li>Enter insert mode with a new line above current line: <code>O</code> (Open a new line above)</li>
+</ul>
+</li>
+<li>Go to the previous edit position(and enter insert mode): <code>gi</code></li>
+<li>Delete current character/line and switch to insert mode: <code>s</code> / <code>S</code></li>
+</ul>
+<h3 id="Insert-Mode-gt-Normal-Mode"><a href="#Insert-Mode-gt-Normal-Mode" class="headerlink" title="Insert Mode -&gt; Normal Mode"></a>Insert Mode -&gt; Normal Mode</h3><ul>
+<li><code>&lt;ESC&gt;</code></li>
+<li><code>&lt;Ctrl&gt;+[</code></li>
+<li><code>&lt;Ctrl&gt;+c</code> (Could interrupt some plugins)</li>
+</ul>
+<h2 id="Command-Mode"><a href="#Command-Mode" class="headerlink" title="Command Mode"></a>Command Mode</h2><ul>
+<li>In Normal Mode, Enter <code>:</code> to enter Command Mode, and Press Enter to confirm a command<ul>
+<li>Save: <code>:w</code></li>
+<li>Quit: <code>:q</code>, can also be used to quit splitted windows</li>
+<li>Vertical Split: <code>:vs</code></li>
+<li>(Horizontal)Split: <code>:sp</code></li>
+<li>Replace All: <code>:% s/&lt;string to be replaced&gt;/&lt;new string we want&gt;/g</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="Visual-Mode"><a href="#Visual-Mode" class="headerlink" title="Visual Mode"></a>Visual Mode</h2><ul>
+<li>In Normal Mode, Enter <code>v</code> to enter Visual Mode, continue selecting with direction keys<ul>
+<li>Select the whole line: <code>V</code></li>
+<li>Select a block: <code>&lt;Ctrl&gt;+V</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="Insert-Mode"><a href="#Insert-Mode" class="headerlink" title="Insert Mode"></a>Insert Mode</h2><ul>
+<li>Delete previous character: <code>&lt;Ctrl&gt;+h</code></li>
+<li>Delete previous word: <code>&lt;Ctrl&gt;+w</code></li>
+<li>Delete current line: <code>&lt;Ctrl&gt;+u</code></li>
+</ul>
+<h2 id="Normal-Mode"><a href="#Normal-Mode" class="headerlink" title="Normal Mode"></a>Normal Mode</h2><ul>
+<li>Undo: <code>u</code></li>
+</ul>
+<h3 id="Delete"><a href="#Delete" class="headerlink" title="Delete"></a>Delete</h3><ul>
+<li>Delete character: <code>x</code></li>
+<li>Delete n characters: <code>nx</code> (n is a number)</li>
+<li>Delete word:<ul>
+<li>Delete word only: <code>diw</code></li>
+<li>Delete around word(include the spaces around the word): <code>daw</code> or <code>dw</code></li>
+</ul>
+</li>
+<li>Delete line: <code>dd</code></li>
+<li>Delete n line: <code>ndd</code> (n is a number)</li>
+<li>Delete content until x(e.g. ‘)’): <code>dt)</code></li>
+<li>Delete content unitl the end of the line: <code>d$</code></li>
+<li>Delete content from the start of the line to current cursor: <code>d0</code></li>
+</ul>
+<h3 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h3><ul>
+<li>Replace character with ‘x’: <code>rx</code></li>
+<li>Delete current character/line and switch to insert mode: <code>s</code> / <code>S</code></li>
+<li>Delete n character/line and switch to insert mode: <code>ns</code> / <code>nS</code></li>
+<li>Change word: <code>cw</code></li>
+<li>Change word until x(e.g. ‘)’): <code>ct)</code></li>
+</ul>
+<h3 id="Copy-Paste"><a href="#Copy-Paste" class="headerlink" title="Copy Paste"></a>Copy Paste</h3><ul>
+<li>Copy: select with visual mode, then <code>y</code></li>
+<li>Copy current line: <code>yy</code></li>
+<li>Copy to system clipboard: <code>&quot;+y</code> or <code>:set clipboard=unnamed</code> then <code>y</code></li>
+<li>Paste: <code>p</code></li>
+</ul>
+<h2 id="Navigation"><a href="#Navigation" class="headerlink" title="Navigation"></a>Navigation</h2><h3 id="Normal-Navigation"><a href="#Normal-Navigation" class="headerlink" title="Normal Navigation"></a>Normal Navigation</h3><ul>
+<li>Support direction keys</li>
+<li>h(left) j(down) k(up) l(right)</li>
+</ul>
+<h3 id="Navigation-by-words"><a href="#Navigation-by-words" class="headerlink" title="Navigation by words"></a>Navigation by words</h3><ul>
+<li>word: split by all kinds of tokens</li>
+<li>WORD: split by spaces</li>
+<li>Move to the start of the next word/WORD: <code>w</code> / <code>W</code></li>
+<li>Move to the end of the next word/WORD: <code>e</code> / <code>E</code></li>
+<li>Move to the start of the previous word/WORD: <code>b</code> / <code>B</code></li>
+</ul>
+<h3 id="Search-a-specific-char-inline"><a href="#Search-a-specific-char-inline" class="headerlink" title="Search a specific char inline"></a>Search a specific char inline</h3><ul>
+<li>Search after current cursor position:<ul>
+<li>Go to a specific character<code>&#123;char&#125;</code>: <code>f&#123;char&#125;</code></li>
+<li>Go to the previous character of <code>&#123;char&#125;</code>: <code>t&#123;char&#125;</code></li>
+</ul>
+</li>
+<li>Search before current cursor position:<ul>
+<li>Go to a specific character<code>&#123;char&#125;</code>: <code>F&#123;char&#125;</code></li>
+<li>Go to the next character of <code>&#123;char&#125;</code></li>
+</ul>
+</li>
+<li>Go to the previous/next <code>&#123;char&#125;</code> with: <code>;</code> / <code>,</code></li>
+</ul>
+<h3 id="Horizontal-Navigation"><a href="#Horizontal-Navigation" class="headerlink" title="Horizontal Navigation"></a>Horizontal Navigation</h3><ul>
+<li>Move to the first character of the line: <code>0</code></li>
+<li>Move to the first non-space character of the line: <code>^</code></li>
+<li>Move to the last character of the line: <code>$</code></li>
+<li>Move to the last non-space character of the line: <code>g_</code></li>
+</ul>
+<h3 id="Page-Navigation"><a href="#Page-Navigation" class="headerlink" title="Page Navigation"></a>Page Navigation</h3><ul>
+<li>Move to start of the file: <code>gg</code></li>
+<li>Move to the end of the file: <code>G</code></li>
+<li>Back to previous position: <code>&lt;Ctrl+o&gt;</code></li>
+<li>Go to the head of the screen: <code>H</code></li>
+<li>Go to the middle of the screen: <code>M</code></li>
+<li>Go to the Lower of the screen: <code>L</code></li>
+<li>Page up(upward): <code>&lt;Ctrl&gt;+u</code></li>
+<li>Page down(forward): <code>&lt;Ctrl+f&gt;</code></li>
+<li>Set current line to the middle of the screen: <code>zz</code></li>
+</ul>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">William Wenchang Liu</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://williamlwclwc.github.io/2021/03/09/Vim-Basics/">http://williamlwclwc.github.io/2021/03/09/Vim-Basics/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Vim/">Vim</a></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/03/05/novel-objects-caption-overview/"><img class="next-cover" data-lazy-src="https://i.loli.net/2019/11/10/3wkO7fuQpgda6vz.png" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Novel Object Captioning Overview</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81Mjg5MC8yOTM2Nw=="></div></div></div></div></article></main><footer id="footer" style="background-image: url(https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By William Wenchang Liu</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Greetings, Welcome to my blog 欢迎来到我的博客</div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="Increase Font Size"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="Decrease Font Size"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>Powered by</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="/js/search/local-search.js"></script><script>var endLoading = function () {
+  document.body.style.overflow = 'auto';
+  document.getElementById('loading-box').classList.add("loaded")
+}
+window.addEventListener('load',endLoading)</script><div class="js-pjax"><script>function loadLivere () {
+  if (typeof LivereTower === 'object') {
+    window.LivereTower.init()
+  }
+  else {
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  }
+}
+
+if ('Livere' === 'Livere' || !false) {
+  if (false) loadComment(document.getElementById('lv-container'), loadLivere)
+  else loadLivere()
+}
+else {
+  function loadOtherComment () {
+    loadLivere()
+  }
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><canvas class="fireworks"></canvas><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="/js/third-party/fireworks.js"></script><script defer="defer" id="ribbon" src="/js/third-party/canvas-ribbon.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script></div></body></html>
