@@ -1,110 +1,216 @@
-<!DOCTYPE html><html data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Categories | Wenchang Liu's Blog</title><meta name="description" content="Categories"><meta name="author" content="William Wenchang Liu"><meta name="copyright" content="William Wenchang Liu"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://williamlwclwc.github.io/categories/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="Categories"><meta property="og:url" content="http://williamlwclwc.github.io/categories/"><meta property="og:site_name" content="Wenchang Liu's Blog"><meta property="og:description" content="Categories"><meta property="og:image" content="https://i.loli.net/2019/11/10/xthHmnbdNerWOqP.png"><meta property="article:published_time" content="2018-12-19T06:53:28.000Z"><meta property="article:modified_time" content="2020-09-04T03:12:35.346Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
-  document.documentElement.setAttribute('data-theme', 'dark')
-  if (document.querySelector('meta[name="theme-color"]') !== null) {
-    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
-  }
-}
-var activateLightMode = function () {
-  document.documentElement.setAttribute('data-theme', 'light')
-  if (document.querySelector('meta[name="theme-color"]') !== null) {
-    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
-  }
-}
-
-var getCookies = function (name) {
-  const value = `; ${document.cookie}`
-  const parts = value.split(`; ${name}=`)
-  if (parts.length === 2) return parts.pop().split(';').shift()
-}
-
-var autoChangeMode = 'false'
-var t = getCookies('theme')
-if (autoChangeMode === '1') {
-  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
-  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
-  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
-
-  if (t === undefined) {
-    if (isLightMode) activateLightMode()
-    else if (isDarkMode) activateDarkMode()
-    else if (isNotSpecified || hasNoSupport) {
-      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
-      var now = new Date()
-      var hour = now.getHours()
-      var isNight = hour <= 6 || hour >= 18
-      isNight ? activateDarkMode() : activateLightMode()
-    }
-    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-      if (Cookies.get('theme') === undefined) {
-        e.matches ? activateDarkMode() : activateLightMode()
-      }
-    })
-  } else if (t === 'light') activateLightMode()
-  else activateDarkMode()
-} else if (autoChangeMode === '2') {
-  now = new Date()
-  hour = now.getHours()
-  isNight = hour <= 6 || hour >= 18
-  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
-  else if (t === 'light') activateLightMode()
-  else activateDarkMode()
-} else {
-  if (t === 'dark') activateDarkMode()
-  else if (t === 'light') activateLightMode()
-}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+<!DOCTYPE html><html data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Categories | Wenchang Liu's Blog</title><meta name="author" content="William Wenchang Liu"><meta name="copyright" content="William Wenchang Liu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Incoming MSCS Student @ UC Davis">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Categories">
+<meta property="og:url" content="http://williamlwclwc.github.io/categories/index.html">
+<meta property="og:site_name" content="Wenchang Liu&#39;s Blog">
+<meta property="og:description" content="Incoming MSCS Student @ UC Davis">
+<meta property="og:locale">
+<meta property="og:image" content="https://i.loli.net/2019/11/10/xthHmnbdNerWOqP.png">
+<meta property="article:published_time" content="2018-12-19T06:53:28.000Z">
+<meta property="article:modified_time" content="2020-09-04T03:12:35.346Z">
+<meta property="article:author" content="William Wenchang Liu">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2019/11/10/xthHmnbdNerWOqP.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://williamlwclwc.github.io/categories/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: 'ca-pub-8362402610611546',
+  enable_page_level_ads: 'true'
+});</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
   translate: undefined,
   noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
   copy: {
     success: 'Copy successfully',
     error: 'Copy error',
     noSupport: 'The browser does not support'
   },
-  bookmark: {
-    message_prev: 'Press',
-    message_next: 'to bookmark this page'
+  relativeDate: {
+    homepage: false,
+    post: false
   },
-  runtime_unit: 'days',
-  runtime: false,
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
   copyright: {"limitCount":50,"languages":{"author":"Author: William Wenchang Liu","link":"Link: ","source":"Source: Wenchang Liu's Blog","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source."}},
-  ClickShowText: undefined,
-  medium_zoom: false,
-  fancybox: true,
+  lightbox: 'fancybox',
   Snackbar: undefined,
-  justifiedGallery: {
-    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
-    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
   },
-  baiduPush: false,
-  highlightCopy: true,
-  highlightLang: true,
   isPhotoFigcaption: false,
   islazyload: true,
-  isanchor: false    
-}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Categories',
   isPost: false,
   isHome: false,
   isHighlightShrink: false,
-  isSidebar: false,
-  postUpdate: '2020-09-04 11:12:35'
-}</script><noscript><style>
-#nav {
-  opacity: 1
-}
-.justified-gallery img {
-  opacity: 1
-}
-</style></noscript><meta name="generator" content="Hexo 5.0.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Articles</div><div class="length_num">9</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">Tags</div><div class="length_num">13</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">Categories</div><div class="length_num">5</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div id="body-wrap"><header class="not-index-bg" id="page-header" style="background-image: url(https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">Wenchang Liu's Blog</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="page_site-info"><h1 id="site_title">Categories</h1></div></header><main class="layout_page" id="content-inner"><div class="category-content"><div class="category-lists"><div class="category__title">Category - <span class="category__amount">5</span></div><div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/AI/">AI</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Research/">Research</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Systems/">Systems</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/">Tools</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Web-development/">Web development</a><span class="category-list-count">1</span></li></ul></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81Mjg5MC8yOTM2Nw=="></div></div></div></div></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">William Wenchang Liu</div><div class="author-info__description">Incoming MSCS Student @ UC Davis</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives"><div class="headline">Articles</div><div class="length_num">9</div></a></div><div class="card-info-data-item is-center">      <a href="/tags"><div class="headline">Tags</div><div class="length_num">13</div></a></div><div class="card-info-data-item is-center"><a href="/categories"><div class="headline">Categories</div><div class="length_num">5</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/williamlwclwc"><i class="fab fa-github"></i><span>Follow Me on GitHub</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/williamlwclwc" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:william.wenchang.liu@outlook.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://linkedin.com/in/wenchang-liu-938a6bb2" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">Update theme from melody to butterfly</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-recent-item"><div class="aside-recent-post"><a class="aside-post-cover" href="/2021/03/09/Vim-Basics/" title="Vim Notes"><img class="aside-post-bg" data-lazy-src="https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vim Notes"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2021/03/09/Vim-Basics/" title="Vim Notes">Vim Notes</a><time class="aside-post_meta post-meta-date" datetime="2021-03-09T13:15:52.000Z" title="Created 2021-03-09 21:15:52">2021-03-09</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/2021/03/05/novel-objects-caption-overview/" title="Novel Object Captioning Overview"><img class="aside-post-bg" data-lazy-src="https://i.loli.net/2019/11/10/3wkO7fuQpgda6vz.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Novel Object Captioning Overview"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2021/03/05/novel-objects-caption-overview/" title="Novel Object Captioning Overview">Novel Object Captioning Overview</a><time class="aside-post_meta post-meta-date" datetime="2021-03-05T07:18:07.000Z" title="Created 2021-03-05 15:18:07">2021-03-05</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/2021/03/04/fix-mac-keyboard-on-linux/" title="修复Linux外接键盘F1-F12键异常问题"><img class="aside-post-bg" data-lazy-src="https://i.loli.net/2019/11/10/bEJsXxewpOGuRD8.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="修复Linux外接键盘F1-F12键异常问题"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2021/03/04/fix-mac-keyboard-on-linux/" title="修复Linux外接键盘F1-F12键异常问题">修复Linux外接键盘F1-F12键异常问题</a><time class="aside-post_meta post-meta-date" datetime="2021-03-04T15:34:01.000Z" title="Created 2021-03-04 23:34:01">2021-03-04</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/2020/09/27/tmux-notes/" title="Tmux Basics"><img class="aside-post-bg" data-lazy-src="https://i.loli.net/2019/11/10/xthHmnbdNerWOqP.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Tmux Basics"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2020/09/27/tmux-notes/" title="Tmux Basics">Tmux Basics</a><time class="aside-post_meta post-meta-date" datetime="2020-09-27T03:49:38.000Z" title="Created 2020-09-27 11:49:38">2020-09-27</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/2020/09/18/The-Structure-of-Research-Papers/" title="论文的内容与结构"><img class="aside-post-bg" data-lazy-src="https://i.loli.net/2019/11/10/xthHmnbdNerWOqP.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="论文的内容与结构"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2020/09/18/The-Structure-of-Research-Papers/" title="论文的内容与结构">论文的内容与结构</a><time class="aside-post_meta post-meta-date" datetime="2020-09-18T09:37:43.000Z" title="Created 2020-09-18 17:37:43">2020-09-18</time></div></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>Categories</span></div><ul class="card-category-list">
+  isToc: false,
+  postUpdate: '2020-09-03 20:12:35'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.0.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">9</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">13</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">5</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url('https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Wenchang Liu's Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="page-site-info"><h1 id="site-title">Categories</h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="category-lists"><div class="category-title is-center">Category - <span class="category-amount">5</span></div><div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/AI/">AI</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Research/">Research</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Systems/">Systems</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/">Tools</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Web-development/">Web development</a><span class="category-list-count">1</span></li></ul></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div><div id="comment-switch"><span class="first-comment">Twikoo</span><span class="switch-btn"></span><span class="second-comment">Livere</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div><div><div id="lv-container" data-id="city" data-uid="MTAyMC81Mjg5MC8yOTM2Nw=="></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">William Wenchang Liu</div><div class="author-info__description">Incoming MSCS Student @ UC Davis</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">9</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">13</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">5</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/williamlwclwc"><i class="fab fa-github"></i><span>Follow Me on GitHub</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/williamlwclwc" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:william.wenchang.liu@outlook.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://linkedin.com/in/wenchang-liu-938a6bb2" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">Update theme butterfly from v3.0.0 to v3.8.4</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/03/09/Vim-Basics/" title="Vim Notes"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vim Notes"/></a><div class="content"><a class="title" href="/2021/03/09/Vim-Basics/" title="Vim Notes">Vim Notes</a><time datetime="2021-03-09T13:15:52.000Z" title="Created 2021-03-09 05:15:52">2021-03-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/03/04/novel-objects-caption-overview/" title="Novel Object Captioning Overview"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://i.loli.net/2019/11/10/3wkO7fuQpgda6vz.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Novel Object Captioning Overview"/></a><div class="content"><a class="title" href="/2021/03/04/novel-objects-caption-overview/" title="Novel Object Captioning Overview">Novel Object Captioning Overview</a><time datetime="2021-03-05T07:18:07.000Z" title="Created 2021-03-04 23:18:07">2021-03-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/03/04/fix-mac-keyboard-on-linux/" title="修复Linux外接键盘F1-F12键异常问题"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://i.loli.net/2019/11/10/bEJsXxewpOGuRD8.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="修复Linux外接键盘F1-F12键异常问题"/></a><div class="content"><a class="title" href="/2021/03/04/fix-mac-keyboard-on-linux/" title="修复Linux外接键盘F1-F12键异常问题">修复Linux外接键盘F1-F12键异常问题</a><time datetime="2021-03-04T15:34:01.000Z" title="Created 2021-03-04 07:34:01">2021-03-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/09/26/tmux-notes/" title="Tmux Basics"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://i.loli.net/2019/11/10/xthHmnbdNerWOqP.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Tmux Basics"/></a><div class="content"><a class="title" href="/2020/09/26/tmux-notes/" title="Tmux Basics">Tmux Basics</a><time datetime="2020-09-27T03:49:38.000Z" title="Created 2020-09-26 20:49:38">2020-09-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/09/18/The-Structure-of-Research-Papers/" title="论文的内容与结构"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://i.loli.net/2019/11/10/xthHmnbdNerWOqP.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="论文的内容与结构"/></a><div class="content"><a class="title" href="/2020/09/18/The-Structure-of-Research-Papers/" title="论文的内容与结构">论文的内容与结构</a><time datetime="2020-09-18T09:37:43.000Z" title="Created 2020-09-18 02:37:43">2020-09-18</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
             <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/AI/"><span class="card-category-list-name">AI</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Research/"><span class="card-category-list-name">Research</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Systems/"><span class="card-category-list-name">Systems</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Tools/"><span class="card-category-list-name">Tools</span><span class="card-category-list-count">5</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Web-development/"><span class="card-category-list-name">Web development</span><span class="card-category-list-count">1</span></a></li>
-                       
-            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href='/tags/AI/' style='font-size:17px; color:rgb(157, 99, 6)'>AI</a><a href='/tags/CV/' style='font-size:21px; color:rgb(135, 194, 110)'>CV</a><a href='/tags/Git/' style='font-size:17px; color:rgb(170, 138, 156)'>Git</a><a href='/tags/GitHub-Blog/' style='font-size:19px; color:rgb(155, 23, 123)'>GitHub Blog</a><a href='/tags/Hexo/' style='font-size:16px; color:rgb(82, 1, 151)'>Hexo</a><a href='/tags/Image-Caption/' style='font-size:16px; color:rgb(57, 183, 25)'>Image Caption</a><a href='/tags/Linux/' style='font-size:19px; color:rgb(104, 170, 161)'>Linux</a><a href='/tags/Markdown/' style='font-size:16px; color:rgb(121, 141, 34)'>Markdown</a><a href='/tags/NLP/' style='font-size:20px; color:rgb(125, 0, 138)'>NLP</a><a href='/tags/Research/' style='font-size:20px; color:rgb(63, 17, 113)'>Research</a><a href='/tags/Tmux/' style='font-size:21px; color:rgb(146, 68, 25)'>Tmux</a><a href='/tags/Vim/' style='font-size:16px; color:rgb(192, 60, 192)'>Vim</a><a href='/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/' style='font-size:16px; color:rgb(121, 169, 29)'>环境配置</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/03/"><span class="card-archive-list-date">March 2021</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/09/"><span class="card-archive-list-date">September 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/06/"><span class="card-archive-list-date">June 2019</span><span class="card-archive-list-count">4</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">Article :</div><div class="webinfo-article-count">9</div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">UV :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">PV :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div><div class="card-widget card-map"><div class="card-content"><div class="item-headline"><i class="fa fa-map-marker" aria-hidden="true"></i><span>Clustrmaps Visitors Tracker</span><a target="_blank" rel="noopener" href="https://clustrmaps.com/site/1bjer"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=400&amp;t=m&amp;d=pwHQFCQkJfEdS9yBxwK0hWdLK80o-WQKYFAQ_yMGtrs"/></a></div></div></div></div></main><footer id="footer" style="background-image: url(https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By William Wenchang Liu</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Greetings, Welcome to my blog 欢迎来到我的博客</div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>Powered by</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="/js/search/local-search.js"></script><script>var endLoading = function () {
-  document.body.style.overflow = 'auto';
-  document.getElementById('loading-box').classList.add("loaded")
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/GitHub-Blog/" style="font-size: 1.15em; color: rgb(35, 42, 161)">GitHub Blog</a><a href="/tags/Hexo/" style="font-size: 1.15em; color: rgb(103, 46, 121)">Hexo</a><a href="/tags/Research/" style="font-size: 1.45em; color: rgb(169, 197, 122)">Research</a><a href="/tags/Linux/" style="font-size: 1.15em; color: rgb(159, 160, 7)">Linux</a><a href="/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" style="font-size: 1.15em; color: rgb(65, 68, 154)">环境配置</a><a href="/tags/Git/" style="font-size: 1.45em; color: rgb(110, 142, 185)">Git</a><a href="/tags/AI/" style="font-size: 1.15em; color: rgb(12, 60, 73)">AI</a><a href="/tags/NLP/" style="font-size: 1.15em; color: rgb(80, 10, 60)">NLP</a><a href="/tags/Markdown/" style="font-size: 1.15em; color: rgb(139, 141, 188)">Markdown</a><a href="/tags/CV/" style="font-size: 1.15em; color: rgb(94, 162, 108)">CV</a><a href="/tags/Image-Caption/" style="font-size: 1.15em; color: rgb(119, 186, 51)">Image Caption</a><a href="/tags/Tmux/" style="font-size: 1.15em; color: rgb(80, 80, 147)">Tmux</a><a href="/tags/Vim/" style="font-size: 1.15em; color: rgb(198, 99, 111)">Vim</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/03/"><span class="card-archive-list-date">March 2021</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/09/"><span class="card-archive-list-date">September 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/06/"><span class="card-archive-list-date">June 2019</span><span class="card-archive-list-count">4</span></a></li></ul></div><div class="card-widget card-map"><div class="card-content"><div class="item-headline"><i class="fa fa-map-marker" aria-hidden="true"></i><span>Clustrmaps Tracker</span><a target="_blank" rel="noopener" href="https://clustrmaps.com/site/1bjer"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="//clustrmaps.com/map_v2.png?cl=ffffff&amp;w=400&amp;t=m&amp;d=pwHQFCQkJfEdS9yBxwK0hWdLK80o-WQKYFAQ_yMGtrs"/></a></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By William Wenchang Liu</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Greetings, Welcome to my blog 欢迎来到我的博客</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
 }
-window.addEventListener('load',endLoading)</script><div class="js-pjax"><script>function loadLivere () {
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>(()=>{
+  const $countDom = document.getElementById('twikoo-count')
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://williamlwclwc-hexo-blog-twikoo.vercel.app/',
+      region: ''
+    }, null))
+  }
+
+  const getCount = () => {
+    twikoo.getCommentsCount({
+      envId: 'https://williamlwclwc-hexo-blog-twikoo.vercel.app/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      $countDom.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const loadTwikoo = (bool = false) => {
+    if (typeof twikoo === 'object') {
+      init()
+      bool && $countDom && setTimeout(getCount,0)
+    } else {
+      getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(()=> {
+        init()
+        bool && $countDom && setTimeout(getCount,0)
+      })
+    }
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo(true)
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script><script>function loadLivere () {
   if (typeof LivereTower === 'object') {
     window.LivereTower.init()
   }
@@ -120,12 +226,12 @@ window.addEventListener('load',endLoading)</script><div class="js-pjax"><script>
   }
 }
 
-if ('Livere' === 'Livere' || !false) {
-  if (false) loadComment(document.getElementById('lv-container'), loadLivere)
+if ('Twikoo' === 'Livere' || !false) {
+  if (false) btf.loadComment(document.getElementById('lv-container'), loadLivere)
   else loadLivere()
 }
 else {
   function loadOtherComment () {
     loadLivere()
   }
-}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><canvas class="fireworks"></canvas><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="/js/third-party/fireworks.js"></script><script defer="defer" id="ribbon" src="/js/third-party/canvas-ribbon.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script></div></body></html>
+}</script></div><canvas class="fireworks" mobile="false"></canvas><script src="/js/third-party/fireworks.js"></script><script defer="defer" id="ribbon" src="/js/third-party/canvas-ribbon.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
