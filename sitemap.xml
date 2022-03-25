@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://williamlwclwc.github.io/2021/03/09/Vim-Basics/</loc>
+    
+    <lastmod>2022-03-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://williamlwclwc.github.io/2022/03/22/cmake-quickstart/</loc>
+    
+    <lastmod>2022-03-23</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://williamlwclwc.github.io/about/index.html</loc>
     
-    <lastmod>2021-12-13</lastmod>
+    <lastmod>2022-03-21</lastmod>
     
   </url>
   
@@ -17,13 +31,6 @@
   
   <url>
     <loc>http://williamlwclwc.github.io/2021/03/04/novel-objects-caption-overview/</loc>
-    
-    <lastmod>2021-08-01</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://williamlwclwc.github.io/2021/03/09/Vim-Basics/</loc>
     
     <lastmod>2021-08-01</lastmod>
     
@@ -95,7 +102,7 @@
 
   <url>
     <loc>http://williamlwclwc.github.io/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <lastmod>2022-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -103,91 +110,91 @@
   
   <url>
     <loc>http://williamlwclwc.github.io/tags/GitHub-Blog/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <lastmod>2022-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://williamlwclwc.github.io/tags/Hexo/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <lastmod>2022-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://williamlwclwc.github.io/tags/Research/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <lastmod>2022-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://williamlwclwc.github.io/tags/Linux/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <lastmod>2022-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://williamlwclwc.github.io/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <lastmod>2022-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://williamlwclwc.github.io/tags/Git/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <lastmod>2022-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://williamlwclwc.github.io/tags/AI/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <lastmod>2022-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://williamlwclwc.github.io/tags/NLP/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <lastmod>2022-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://williamlwclwc.github.io/tags/Markdown/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <lastmod>2022-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://williamlwclwc.github.io/tags/CV/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <lastmod>2022-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://williamlwclwc.github.io/tags/Image-Caption/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <lastmod>2022-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://williamlwclwc.github.io/tags/Tmux/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <lastmod>2022-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://williamlwclwc.github.io/tags/Vim/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <lastmod>2022-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -196,35 +203,35 @@
   
   <url>
     <loc>http://williamlwclwc.github.io/categories/Web-development/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <lastmod>2022-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://williamlwclwc.github.io/categories/Research/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <lastmod>2022-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://williamlwclwc.github.io/categories/Systems/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <lastmod>2022-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://williamlwclwc.github.io/categories/Tools/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <lastmod>2022-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://williamlwclwc.github.io/categories/AI/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <lastmod>2022-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
