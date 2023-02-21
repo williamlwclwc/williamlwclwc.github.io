@@ -1,34 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://williamlwclwc.github.io/2022/03/22/cmake-quickstart/</loc>
-    <lastmod>2022-03-25T07:40:50.843Z</lastmod>
-  </url>  <url>
-    <loc>http://williamlwclwc.github.io/2021/03/09/Vim-Basics/</loc>
-    <lastmod>2022-03-25T07:34:02.868Z</lastmod>
-  </url>  <url>
-    <loc>http://williamlwclwc.github.io/2019/06/13/Introduction/</loc>
-    <lastmod>2021-12-13T01:41:08.225Z</lastmod>
-  </url>  <url>
-    <loc>http://williamlwclwc.github.io/2021/03/04/novel-objects-caption-overview/</loc>
-    <lastmod>2021-08-01T10:04:55.415Z</lastmod>
-  </url>  <url>
-    <loc>http://williamlwclwc.github.io/2020/09/26/tmux-notes/</loc>
-    <lastmod>2021-03-07T05:29:57.462Z</lastmod>
-  </url>  <url>
-    <loc>http://williamlwclwc.github.io/2019/06/10/git-basic/</loc>
-    <lastmod>2021-03-05T07:36:45.705Z</lastmod>
-  </url>  <url>
-    <loc>http://williamlwclwc.github.io/2021/03/04/fix-mac-keyboard-on-linux/</loc>
-    <lastmod>2021-03-05T07:36:42.372Z</lastmod>
-  </url>  <url>
-    <loc>http://williamlwclwc.github.io/2019/06/10/git-undo/</loc>
-    <lastmod>2021-03-05T07:36:34.172Z</lastmod>
-  </url>  <url>
-    <loc>http://williamlwclwc.github.io/2019/06/11/md-notes/</loc>
-    <lastmod>2021-03-05T07:36:29.805Z</lastmod>
-  </url>  <url>
     <loc>http://williamlwclwc.github.io/2020/09/18/The-Structure-of-Research-Papers/</loc>
-    <lastmod>2020-09-18T10:10:09.815Z</lastmod>
+    <lastmod>2023-02-21</lastmod>
   </url>
-</urlset>
+  <url>
+    <loc>http://williamlwclwc.github.io/2021/03/09/Vim-Basics/</loc>
+    <lastmod>2022-03-28</lastmod>
+  </url>
+  <url>
+    <loc>http://williamlwclwc.github.io/2022/03/22/cmake-quickstart/</loc>
+    <lastmod>2022-03-27</lastmod>
+  </url>
+  <url>
+    <loc>http://williamlwclwc.github.io/2019/06/13/Introduction/</loc>
+    <lastmod>2021-12-13</lastmod>
+  </url>
+  <url>
+    <loc>http://williamlwclwc.github.io/2021/03/05/novel-objects-caption-overview/</loc>
+    <lastmod>2021-08-01</lastmod>
+  </url>
+  <url>
+    <loc>http://williamlwclwc.github.io/2020/09/27/tmux-notes/</loc>
+    <lastmod>2021-03-07</lastmod>
+  </url>
+  <url>
+    <loc>http://williamlwclwc.github.io/2019/06/11/git-basic/</loc>
+    <lastmod>2021-03-05</lastmod>
+  </url>
+  <url>
+    <loc>http://williamlwclwc.github.io/2021/03/04/fix-mac-keyboard-on-linux/</loc>
+    <lastmod>2021-03-05</lastmod>
+  </url>
+  <url>
+    <loc>http://williamlwclwc.github.io/2019/06/11/git-undo/</loc>
+    <lastmod>2021-03-05</lastmod>
+  </url>
+  <url>
+    <loc>http://williamlwclwc.github.io/2019/06/12/md-notes/</loc>
+    <lastmod>2021-03-05</lastmod>
+  </url>
+</urlset> 
