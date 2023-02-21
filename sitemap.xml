@@ -2,16 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://williamlwclwc.github.io/2020/09/18/The-Structure-of-Research-Papers/</loc>
-    
-    <lastmod>2023-02-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://williamlwclwc.github.io/portfolio/index.html</loc>
+    <loc>http://williamlwclwc.github.io/experiences/index.html</loc>
     
     <lastmod>2023-02-21</lastmod>
     
@@ -29,7 +20,16 @@
   </url>
   
   <url>
-    <loc>http://williamlwclwc.github.io/experiences/index.html</loc>
+    <loc>http://williamlwclwc.github.io/2020/09/18/The-Structure-of-Research-Papers/</loc>
+    
+    <lastmod>2023-02-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://williamlwclwc.github.io/portfolio/index.html</loc>
     
     <lastmod>2023-02-21</lastmod>
     
