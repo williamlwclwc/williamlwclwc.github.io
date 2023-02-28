@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://williamlwclwc.github.io/2020/09/18/The-Structure-of-Research-Papers/</loc>
-    <lastmod>2023-02-21</lastmod>
+    <loc>http://williamlwclwc.github.io/2020/09/27/tmux-notes/</loc>
+    <lastmod>2023-02-28</lastmod>
+  </url>
+  <url>
+    <loc>http://williamlwclwc.github.io/2020/09/18/%E8%AE%BA%E6%96%87%E7%9A%84%E5%86%85%E5%AE%B9%E4%B8%8E%E7%BB%93%E6%9E%84/</loc>
+    <lastmod>2023-02-28</lastmod>
+  </url>
+  <url>
+    <loc>http://williamlwclwc.github.io/2021/03/05/novel-objects-caption-overview/</loc>
+    <lastmod>2023-02-28</lastmod>
+  </url>
+  <url>
+    <loc>http://williamlwclwc.github.io/2019/06/11/git-basic/</loc>
+    <lastmod>2023-02-28</lastmod>
+  </url>
+  <url>
+    <loc>http://williamlwclwc.github.io/2019/06/13/Introduction/</loc>
+    <lastmod>2023-02-28</lastmod>
   </url>
   <url>
     <loc>http://williamlwclwc.github.io/2021/03/09/Vim-Basics/</loc>
@@ -11,22 +27,6 @@
   <url>
     <loc>http://williamlwclwc.github.io/2022/03/22/cmake-quickstart/</loc>
     <lastmod>2022-03-27</lastmod>
-  </url>
-  <url>
-    <loc>http://williamlwclwc.github.io/2019/06/13/Introduction/</loc>
-    <lastmod>2021-12-13</lastmod>
-  </url>
-  <url>
-    <loc>http://williamlwclwc.github.io/2021/03/05/novel-objects-caption-overview/</loc>
-    <lastmod>2021-08-01</lastmod>
-  </url>
-  <url>
-    <loc>http://williamlwclwc.github.io/2020/09/27/tmux-notes/</loc>
-    <lastmod>2021-03-07</lastmod>
-  </url>
-  <url>
-    <loc>http://williamlwclwc.github.io/2019/06/11/git-basic/</loc>
-    <lastmod>2021-03-05</lastmod>
   </url>
   <url>
     <loc>http://williamlwclwc.github.io/2021/03/04/fix-mac-keyboard-on-linux/</loc>
