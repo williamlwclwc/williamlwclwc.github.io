@@ -6,7 +6,7 @@
   <link href="http://williamlwclwc.github.io/atom.xml" rel="self"/>
   
   <link href="http://williamlwclwc.github.io/"/>
-  <updated>2023-03-28T02:35:39.847Z</updated>
+  <updated>2023-05-28T00:37:31.352Z</updated>
   <id>http://williamlwclwc.github.io/</id>
   
   <author>
@@ -17,9 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>GTD 读书笔记</title>
+    <link href="http://williamlwclwc.github.io/2023/05/27/GTD-reading-notes/"/>
+    <id>http://williamlwclwc.github.io/2023/05/27/GTD-reading-notes/</id>
+    <published>2023-05-27T19:58:56.000Z</published>
+    <updated>2023-05-28T00:37:31.352Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Getting-Things-Done-核心"><a href="#Getting-Things-Done-核心" class="headerlink" title="Getting Things Done 核心"></a>Getting Things Done 核心</h2><h3 id="针对的问题"><a href="#针对的问题" class="headerlink" title="针对的问题"></a>针对的问题</h3><ul><li>因任务繁多而焦虑</li><li>拖延，不知道如何开始</li><li>经常记不住要做的事情</li><li>做事不集中，做一件事情的时候想着其他的事情</li><li>闲着的时候无所事事，忙的时候又有很多规划和想法</li></ul><h3 id="GTD-核心思想"><a href="#GTD-核心思想" class="headerlink" title="GTD 核心思想"></a>GTD 核心思想</h3><ul><li>通过一个辅助系统来帮助你记录和规划要做的事情，让你不需要用脑子惦记这么多的事情，从而做到stress-free</li><li><strong>Key Takeaway</strong>：<ul><li>把任务写下来而不是用脑子记</li><li>写出具体的小步的下一步可执行的任务</li><li>对不同的任务做分类</li><li>定期更新任务系统</li></ul></li></ul><h3 id="GTD系统工作流"><a href="#GTD系统工作流" class="headerlink" title="GTD系统工作流"></a>GTD系统工作流</h3><p><img src="/img/../../img/GTD/GTD-workflow.jpeg" alt="GTD-workflow"></p><ul><li><strong>材料</strong> 就是我们遇到的所有的任务、想法等，需要使用一个工作篮来收集，只需要一个方便记录的工具就行，比如一些可以多端同步的app、甚至待办清单app</li><li>材料需要被划分到几大类清单当中:<ul><li><strong>参考资料</strong>: 一个收藏夹，看到以后可能用得到的资料可以找个app收藏起来</li><li><strong>将来&#x2F;也许&#x2F;Maybe清单</strong>：不适合现在做，以后有空再决定</li><li><strong>立刻执行</strong>：如果一个任务2分钟以内或者很容易就能完成，马上做掉它！</li><li><strong>Waiting清单</strong>：一些事情无需自己操刀，委托别人做，放入waiting追踪结果即可</li><li><strong>日程表</strong>: 特定时间的安排，比如约了开会、看电影、看病等，放入日历APP</li><li><strong>下一步行动清单</strong>：已经确定该怎么做，但是需要找时间完成的任务，可以放入这个清单，可以按照所需时间、地点、优先级等因素在空闲时间完成</li><li><strong>项目</strong>: 这个是最不好处理的，通常不清楚如何下手或者需要很多步骤才能完成<ul><li>一个是可以用项目管理工具来单独处理项目</li><li>一些简单的多步骤任务可以直接使用todo app的子项目来记录</li><li><em>(自己加的)紧急任务</em>: 可以单独列个清单或者给任务加上ddl提醒</li></ul></li></ul></li></ul><h3 id="如何实现GTD系统"><a href="#如何实现GTD系统" class="headerlink" title="如何实现GTD系统"></a>如何实现GTD系统</h3><ul><li>目前使用Apple自带的Reminder + 随便一个日历App + (可选)项目管理App Logseq&#x2F;Trello<ul><li>新版本的Reminder可以给任务打tag，再根据tag和其他筛选条件创建smart list的这个功能。这样我们就可以把任务都放入Inbox工作篮的清单中，然后打不同的tag进而细分到其他的清单当中。</li><li>日程表可以通过任何一个日历App实现，Apple自带的日历就不错</li><li>参考资料使用一个方便检索的收藏夹即可，不是很重要</li><li>项目比较不好处理，一般的多步骤任务可以直接创建子reminder，这样子任务也可以通过tag进到不同的任务清单中。大型的项目还是需要通过一些专门的App来追踪进度比较好</li><li>还有一些是日常重复任务，reminder也可以很好的解决，目前单独使用了一个清单处理重复的日常任务，当然想加入到下一步清单中也是可以的</li></ul></li><li>目前的系统示例(测试中…)<ul><li><img src="/../img/GTD/Reminder-app.png" alt="Reminder-app"></li><li>Inbox、Project、Repeated是三个实体清单，Inbox是收集一般的任务、Project收集多步骤的任务、Repeated主要是一些每天、每月重复要做的任务</li><li>Unassigned Inbox是没被打任何tag的任务，一般想到什么要做的都可以先收集到这里</li><li>Next Action是下一步行动清单，打了Next tag的任务会收集在这里</li><li>Waiting和Maybe分别是委托他人的任务清单和将来也许清单，根据waiting tag和Urgent tag来筛选</li><li>如果需要按地点、优先级、所需时间等要素来分类任务也可以加入这些tag就可以筛选出对应的清单了</li></ul></li></ul><h2 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h2><h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><ul><li>这本书介绍的方法还是挺好的，尤其是结合现如今信息化的各类效率App，能够很有效地给大脑减负。大多数人面多繁多的任务仅仅靠脑子记是不够的</li><li>这里面对任务的分类也很关键，takeaway里面的4点，我们很多人1、4条都已经做到了，我们把要做的事情记录在to-do app中，并且定期更新。但是这里面有一个问题，那就是如果不分类而是单纯的记录，很多时候事情会多到超出我们的预期，从而导致执行的时候非常困难，不知道该从那个任务开始做，最后还是去找离ddl最近的任务做。又或者自行过滤掉一些认为“不重要”的任务，结果还是会忘记或者脑子里惦记</li><li>下一步行动也是一个很好的idea，很多人或书都提到，开始做是最困难的一步，而阻止我们开始的一个很大原因就是因为我们不知道要做什么，所以把大任务拆分成一个个可执行的下一步行动也是GTD的关键所在</li></ul><h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><ul><li>缺点主要体现在书的写作上，不知道是否是翻译的原因，很多话都是绕来绕去重点不突出，读起来比较费劲。而且章节之间的划分也不明确，很多东西前面提过后面又原封不动地重复一遍，显得莫名其妙</li><li>我觉得还是因为核心思想过于简单，举例涉及到作者的客户商业内容又不能说的很具体，只好硬加入很多空话。另外就是一些难点，比如如何安排项目，是因人而异的，作者无法在书里给出答案</li></ul><h3 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h3><ul><li>个人建议如果能够理解GTD的思想，直接看别人总结的blog或着视频就可以，如果想看原书可以快速浏览，看核心思路即可</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Getting-Things-Done-核心&quot;&gt;&lt;a href=&quot;#Getting-Things-Done-核心&quot; class=&quot;headerlink&quot; title=&quot;Getting Things Done 核心&quot;&gt;&lt;/a&gt;Getting Things Done </summary>
+      
+    
+    
+    
+    <category term="读书笔记" scheme="http://williamlwclwc.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="读书笔记" scheme="http://williamlwclwc.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="时间管理" scheme="http://williamlwclwc.github.io/tags/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/"/>
+    
+    <category term="效率提升" scheme="http://williamlwclwc.github.io/tags/%E6%95%88%E7%8E%87%E6%8F%90%E5%8D%87/"/>
+    
+  </entry>
+  
+  <entry>
     <title>伯恩斯新情绪疗法 读书笔记</title>
-    <link href="http://williamlwclwc.github.io/2023/03/27/%E4%BC%AF%E6%81%A9%E6%96%AF%E6%96%B0%E6%83%85%E7%BB%AA%E7%96%97%E6%B3%95-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    <id>http://williamlwclwc.github.io/2023/03/27/%E4%BC%AF%E6%81%A9%E6%96%AF%E6%96%B0%E6%83%85%E7%BB%AA%E7%96%97%E6%B3%95-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</id>
+    <link href="http://williamlwclwc.github.io/2023/03/27/the-new-mood-therapy-reading-notes/"/>
+    <id>http://williamlwclwc.github.io/2023/03/27/the-new-mood-therapy-reading-notes/</id>
     <published>2023-03-28T02:23:28.000Z</published>
     <updated>2023-03-28T02:35:39.847Z</updated>
     
