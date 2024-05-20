@@ -1,15 +1,17 @@
 /* Global styles */
 :root {
-    --background: #1e1e2e; 
-    --background-light: #fdebf3;
+    --background: #383857; 
+    --background-light: #e1f8fa;
     --button: #78c2ad;
-    --text: #fdebf3;
+    --text: #d7f4fc;
     --text-light: #1e1e2e; 
     --text-link: #78c2ad;
     --underline: #375a7f;
     --header: 'Pacifico', cursive;
     --body: 'Josefin Sans', sans-serif; 
 }
+
+a { text-decoration: none }
 
 html {
     background-color: var(--background);
@@ -28,7 +30,7 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     margin: 0;
     margin-bottom: 5px;
 }
@@ -56,7 +58,7 @@ small, li {
 /* Navigation Bar */
 .navbar {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     margin-top: 0.8rem;
 }
 
@@ -77,7 +79,7 @@ small, li {
 }
 
 .navbar__menu > a {
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 .navbar__title > a:hover, .navbar__menu > a:hover, .navbar__menu > a:focus {
@@ -240,7 +242,7 @@ footer {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    border: 2px solid #fdebf3;
+    border: 2px solid #d7f4fc;
 }
 
 .icon__link:hover {

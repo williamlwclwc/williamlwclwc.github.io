@@ -1,0 +1,451 @@
+---
+import Layout from '../layouts/Layout.astro';
+const pageTitle = "Experience";
+---
+<Layout pageTitle={pageTitle}>
+    <div class="gif">
+        <img width="300" height="259" alt="RaccoonLaptopGif" src="/laptop.webp"/>
+    </div>
+    <h2>Experience</h2>
+    <br />
+    <div class="timeline"> 
+        <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+            <div class="timeline__event__icon ">
+                <i class="lni lni-code"></i>
+            </div>
+            <div class="timeline__event__date">
+                2024/05 - Present
+                <br />
+                Sunnyvale, CA
+            </div>
+            <div class="timeline__event__content ">
+                <div class="timeline__event__title">
+                    Backend Engineer
+                </div>
+                <div class="timeline__event__description">
+                    <p>@ AOS Team, Walmart Labs</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+            <div class="timeline__event__icon">
+                <i class="lni lni-code"></i>
+            </div>
+            <div class="timeline__event__date">
+                2022/06 - 2022/09
+                <br />
+                MTV, CA
+            </div>
+            <div class="timeline__event__content">
+                <div class="timeline__event__title">
+                    SDE Intern
+                </div>
+                <div class="timeline__event__description">
+                    <p>@ MLSys Team, DataAML, TikTok/ByteDance</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+            <div class="timeline__event__icon">
+                <i class="lni lni-code"></i>
+            </div>
+            <div class="timeline__event__date">
+                2020/09 - 2021/07
+                <br />
+                Beijing, China
+            </div>
+            <div class="timeline__event__content">
+                <div class="timeline__event__title">
+                    Research Intern/Assistant
+                </div>
+                <div class="timeline__event__description">
+                    <p>@ THUNLP Lab, TsingHua University</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline__event animated fadeInUp timeline__event--type1">
+            <div class="timeline__event__icon">
+                <i class="lni lni-code"></i>
+            </div>
+            <div class="timeline__event__date">
+                2019/06 - 2019/08
+                <br />
+                Beijing, China
+            </div>
+            <div class="timeline__event__content">
+                <div class="timeline__event__title">
+                    MTS Intern
+                </div>
+                <div class="timeline__event__description">
+                    <p>@ R&D Department, VMware</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Education</h2>
+    <br />
+    <div class="timeline"> 
+        <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+            <div class="timeline__event__icon ">
+                <i class="lni lni-graduation"></i>
+            </div>
+            <div class="timeline__event__date">
+                2021 - 2023
+                <br />
+                Davis, CA
+            </div>
+            <div class="timeline__event__content ">
+                <div class="timeline__event__title">
+                    University of California, Davis
+                </div>
+                <div class="timeline__event__description">
+                    <p>M.S. in Computer Science, GPA: 3.96/4, TA for ECS174 Computer Vision</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+            <div class="timeline__event__icon">
+                <i class="lni lni-graduation"></i>
+            </div>
+            <div class="timeline__event__date">
+                2018 - 2020
+                <br />
+                Manchester, UK
+            </div>
+            <div class="timeline__event__content">
+                <div class="timeline__event__title">
+                    The University of Manchester
+                </div>
+                <div class="timeline__event__description">
+                    <p>Exchange Program: B.S.(Hons) in Artificial Intelligence, GPA: 82.5/100 (First Class - top 10%)</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+            <div class="timeline__event__icon">
+                <i class="lni lni-graduation"></i>
+            </div>
+            <div class="timeline__event__date">
+                2016 - 2020
+                <br />
+                Wuhan, China
+            </div>
+            <div class="timeline__event__content">
+                <div class="timeline__event__title">
+                    Huazhong University of Science and Technology
+                </div>
+                <div class="timeline__event__description">
+                    <p>B.E. in Computer Science and Technology</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>
+
+<style lang="scss">
+$content-width: calc(40vw - 84px);
+$margin: 5px;
+$spacing: 20px;
+$bdrs: 6px;
+$circle-size: 10px;
+$icon-size: 20px;
+$bdrs-icon: 100%;
+
+$color1: #9251ac;
+$color2: #f6a4ec;
+
+$color3: #87bbfe;
+$color4: #555ac0;
+
+$color5: #24b47e;
+$color6: #aff1b6;
+* {
+  box-sizing: border-box;
+}
+// html {
+//   font-size: 12px;
+// }
+body {
+//   background: #f6f9fc;
+  font-family: "Open Sans", sans-serif;
+//   color: #525f7f;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  margin: $margin auto;
+  position: relative;
+  color: #525f7f;
+
+  &__event {
+    margin-bottom: $spacing;
+    position: relative;
+    display: flex;
+    margin: $spacing 0;
+    border-radius: $bdrs;
+    align-self: center;
+    width: 50vw;
+
+    &:nth-child(2n + 1) {
+      flex-direction: row-reverse;
+      .timeline__event__date {
+        border-radius: 0 $bdrs $bdrs 0;
+      }
+      .timeline__event__content {
+        border-radius: $bdrs 0 0 $bdrs;
+      }
+
+      .timeline__event__icon {
+        &:before {
+          content: "";
+          width: 2px;
+          height: 100%;
+          background: $color2;
+          position: absolute;
+          top: 0%;
+          left: 50%;
+          right: auto;
+          z-index: -1;
+          transform: translateX(-50%);
+          animation: fillTop 2s forwards 4s ease-in-out;
+        }
+        &:after {
+          content: "";
+          width: 100%;
+          height: 2px;
+          background: $color2;
+          position: absolute;
+          right: 0;
+          z-index: -1;
+          top: 50%;
+          left: auto;
+          transform: translateY(-50%);
+          animation: fillLeft 2s forwards 4s ease-in-out;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 0.8rem;
+      line-height: 1.4;
+      text-transform: uppercase;
+
+      font-weight: 600;
+      color: $color1;
+      letter-spacing: 1.5px;
+    }
+    &__content {
+      padding: $spacing;
+      box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+        0 18px 36px -18px rgba(0, 0, 0, 0.3),
+        0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+      background: #fff;
+      width: $content-width;
+      border-radius: 0 $bdrs $bdrs 0;
+      font-size: 0.6rem;
+    }
+    &__date {
+      color: $color2;
+      font-size: 1.0rem;
+      font-weight: 600;
+      background: $color1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+      padding: 0 $spacing;
+      border-radius: $bdrs 0 0 $bdrs;
+    }
+    &__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $color1;
+      padding: $spacing;
+      align-self: center;
+      margin: 0 $spacing;
+      background: $color2;
+      border-radius: $bdrs-icon;
+      width: $circle-size;
+      box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+        0 18px 36px -18px rgba(0, 0, 0, 0.3),
+        0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+      padding: 40px;
+      height: $circle-size;
+      position: relative;
+
+      i {
+        font-size: $icon-size;
+      }
+
+      &:before {
+        content: "";
+        width: 2px;
+        height: 100%;
+        background: $color2;
+        position: absolute;
+        top: 0%;
+        z-index: -1;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: fillTop 2s forwards 4s ease-in-out;
+      }
+      &:after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: $color2;
+        position: absolute;
+        left: 0%;
+        z-index: -1;
+        top: 50%;
+        transform: translateY(-50%);
+        animation: fillLeftOdd 2s forwards 4s ease-in-out;
+      }
+    }
+    &__description {
+      flex-basis: 60%;
+    }
+
+    &--type2 {
+      &:after {
+        background: $color4;
+      }
+      .timeline__event__date {
+        color: $color3;
+        background: $color4;
+      }
+
+      &:nth-child(2n + 1) {
+        .timeline__event__icon {
+          &:before,
+          &:after {
+            background: $color3;
+          }
+        }
+      }
+
+      .timeline__event__icon {
+        background: $color3;
+        color: $color4;
+        &:before,
+        &:after {
+          background: $color3;
+        }
+      }
+      .timeline__event__title {
+        color: $color4;
+      }
+      .timeline__event__title {
+      }
+    }
+
+    &--type3 {
+      &:after {
+        background: $color5;
+      }
+      .timeline__event__date {
+        color: $color6;
+        background-color: $color5;
+      }
+
+      &:nth-child(2n + 1) {
+        .timeline__event__icon {
+          &:before,
+          &:after {
+            background: $color6;
+          }
+        }
+      }
+
+      .timeline__event__icon {
+        background: $color6;
+        color: $color5;
+        &:before,
+        &:after {
+          background: $color6;
+        }
+      }
+      .timeline__event__title {
+        color: $color5;
+      }
+      .timeline__event__title {
+      }
+    }
+    &:last-child {
+      .timeline__event__icon {
+        &:before {
+          content: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .timeline__event {
+    flex-direction: column;
+    align-self: center;
+    width: 80vw;
+    &__content {
+      width: 100%;
+    }
+
+    &__icon {
+      border-radius: $bdrs $bdrs 0 0;
+      width: 100%;
+      margin: 0;
+      box-shadow: none;
+
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+    &__date {
+      border-radius: 0;
+      padding: $spacing;
+    }
+
+    &:nth-child(2n + 1) {
+      flex-direction: column;
+      align-self: center;
+
+      .timeline__event__date {
+        border-radius: 0;
+        padding: $spacing;
+      }
+
+      .timeline__event__icon {
+        border-radius: $bdrs $bdrs 0 0;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@keyframes fillLeft {
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes fillTop {
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes fillLeftOdd {
+  100% {
+    left: 100%;
+  }
+}
+
+</style>
