@@ -20,10 +20,10 @@ const pageTitle = "Experience";
             </div>
             <div class="timeline__event__content ">
                 <div class="timeline__event__title">
-                    Backend Engineer @ Walmart
+                    SDE III @ Walmart Labs
                 </div>
                 <div class="timeline__event__description">
-                    <p>@ AOS Team, Walmart Labs</p>
+                    <p>@ LMD, Walmart Global Tech</p>
                 </div>
             </div>
         </div>
@@ -172,8 +172,14 @@ body {
 //   color: #525f7f;
 }
 
-p {
-    font-size: 0.8rem;
+.timeline p {
+    font-size: 0.95rem;
+    text-indent: 0;
+    text-align: left;
+}
+
+.timeline__event__description {
+    text-align: left;
 }
 
 .timeline {
@@ -190,7 +196,7 @@ p {
     margin: $spacing 0;
     border-radius: $bdrs;
     align-self: center;
-    width: 50vw;
+    width: 100%;
 
     &:nth-child(2n + 1) {
       flex-direction: row-reverse;
@@ -235,7 +241,7 @@ p {
       font-size: 0.8rem;
       line-height: 1.4;
       text-transform: uppercase;
-
+      text-align: left;
       font-weight: 600;
       color: $color1;
       letter-spacing: 1.5px;
@@ -246,7 +252,7 @@ p {
         0 18px 36px -18px rgba(0, 0, 0, 0.3),
         0 -12px 36px -8px rgba(0, 0, 0, 0.025);
       background: #fff;
-      width: $content-width;
+      flex: 1;
       border-radius: 0 $bdrs $bdrs 0;
       font-size: 0.6rem;
     }
@@ -392,16 +398,26 @@ p {
   .timeline__event {
     flex-direction: column;
     align-self: center;
-    width: 80vw;
+    width: 100%;
+    margin: $spacing * 0.75 0;
+    border-radius: $bdrs;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    
     &__content {
       width: 100%;
+      padding: $spacing * 0.8;
+      box-shadow: none;
+      border-radius: 0 0 $bdrs $bdrs;
     }
 
     &__icon {
-      border-radius: $bdrs $bdrs 0 0;
+      border-radius: 0;
       width: 100%;
       margin: 0;
       box-shadow: none;
+      padding: $spacing;
+      height: auto;
 
       &:before,
       &:after {
@@ -410,7 +426,7 @@ p {
     }
     &__date {
       border-radius: 0;
-      padding: $spacing;
+      padding: $spacing * 0.8;
     }
 
     &:nth-child(2n + 1) {
@@ -419,12 +435,17 @@ p {
 
       .timeline__event__date {
         border-radius: 0;
-        padding: $spacing;
+        padding: $spacing * 0.8;
       }
 
       .timeline__event__icon {
-        border-radius: $bdrs $bdrs 0 0;
+        border-radius: 0;
         margin: 0;
+        padding: $spacing;
+      }
+      
+      .timeline__event__content {
+        border-radius: 0 0 $bdrs $bdrs;
       }
     }
   }
