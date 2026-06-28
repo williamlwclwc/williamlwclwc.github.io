@@ -59,6 +59,7 @@ small, li {
 .navbar {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
+    align-items: center;
     margin-top: 0.8rem;
 }
 
@@ -70,7 +71,10 @@ small, li {
 .navbar__menu {
     font-family: var(--body);
     font-size: 1.1rem;
-    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
 .navbar__title > a, .navbar__menu > a {
